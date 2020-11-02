@@ -27,6 +27,7 @@ function App() {
             <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="#portfolio">Portfolio</a>
             <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="#skills">Skills</a>
             <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="#contact">Contact</a>
+
           </div>
         </nav>
 
@@ -130,16 +131,18 @@ function App() {
                 <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
                   <img src="\tomatokei.png" alt="" className='rounded my-auto' />
                 </div>
-                <h3>Portfolio</h3>
-                <small>Yes, the very portfolio you're looking at right now!</small>
-                <br />
-                <br />
-                <p>Serves as a playground for me to flex new skills I've learned.</p>
-                <p>Come take a look under the hood at the GitHub.</p>
-                <div className="row justify-content-center d-flex p-2">
-                  <a href="" onClick={(e) => { e.preventDefault(); alert(`You're already here, wise guy.`) }}><button className="btn btn-primary mx-1"><i className="fa fa-globe"></i> Visit</button></a>
-                  <a href="./portfolio" ><button className="btn btn-success mx-1"><i className="fa fa-bar-chart"></i> Details</button></a>
-                  <a href="https://github.com/bluegeartechnology/portfolio" target='blank'><button className="btn btn-dark mx-1"><i className="fa fa-github"></i> GitHub</button></a>
+
+                <div className="d-flex flex-column justify-content-between">
+                  <h3>Portfolio Site</h3>
+                  <small>Yes, the very portfolio site you're looking at right now!</small>
+
+                  <p>Serves as a playground for me to flex new skills I've learned.</p>
+                  <p>Come take a look under the hood at GitHub.</p>
+                  <div className="row justify-content-center d-flex p-2">
+                    <a href="" onClick={(e) => { e.preventDefault(); alert(`You're already here, wise guy.`) }}><button className="btn btn-primary mx-1"><i className="fa fa-globe"></i> Visit</button></a>
+                    <a href="./portfolio" ><button className="btn btn-success mx-1"><i className="fa fa-bar-chart"></i> Details</button></a>
+                    <a href="https://github.com/bluegeartechnology/portfolio" target='blank'><button className="btn btn-dark mx-1"><i className="fa fa-github"></i> GitHub</button></a>
+                  </div>
                 </div>
 
               </div>
@@ -173,21 +176,11 @@ function App() {
 
           </div>
 
+          <a href="/projects"><button className='btn btn-warning d-block mx-auto'><h3>See Even More Projects!</h3></button></a>
 
-
-          <h3>Why I Got Into Code</h3>
-
-
-          <h3>Why I like It</h3>
-          <p>Coding is equal parts puzzle solving and engineering. Every puzzle solved yields a new machine which affects the universe.</p>
-
-          <h3>Why I want to be a developer</h3>
-          <p>Programming is the current frontier for humanity. All land has been explored, and now we're building new land in an abstract space.
-			I want to explore that space, and build it out even further.</p>
-
-          <h3>Where I'm at with code</h3>
-          <p>I am currently looking to delve into the business side of web development. For example, building digital services, products</p>
         </div>
+
+
 
       </div>
 
@@ -216,21 +209,34 @@ function App() {
 
       <div id="contact" className='bg-light '>
 
-        <div id="contactContainer" className='container p-4 mb-4'>
+        <div id="contactContainer" className='container p-5 mb-5'>
           <h2>Contact</h2>
 
-          <h3 id='email' >Email: <a href="mailto:joshc@bluegeartechnology.com">joshc@bluegeartechnology.com</a></h3>
+          <h3 className='text-center py-5'>Let's work together.</h3>
+
+          <div className="d-flex row justify-content-around my-5">
+
+            <div target='blank' className='justify-content-center text-center text-primary col-12 col-sm-6 col-md-4 col-lg-4'>
+              <a href='mailto:joshc@bluegeartechnology@.com' className="mx-auto btn text-primary">
+                <i className="fa fa-envelope fa-5x"></i>
+              </a>
+              <h3 id='email' >joshc@bluegeartechnology.com</h3>
+            </div>
+
+            <a href='https://github.com/bluegeartechnology' target='blank' className='justify-content-center text-center text-dark btn col-12 col-sm-6 col-md-4 col-lg-4'>
+              <i className="fa fa-github fa-5x mx-auto"></i>
+              <h3 id='github' className='text-center' >GitHub</h3>
+            </a>
+
+            <a href='https://youtube.com/' target='blank' className='justify-content-center text-center text-danger btn col-12 col-sm-6 col-md-4 col-lg-4'>
+              <i className="fa fa-youtube-play fa-5x mx-auto"></i>
+              <h3 id='youtube' >YouTube</h3>
+            </a>
+
+          </div>
 
 
-          <h3>Why I like It</h3>
-          <p>Coding is equal parts puzzle solving and engineering. Every puzzle solved yields a new machine which affects the universe.</p>
 
-          <h3>Why I want to be a developer</h3>
-          <p>Programming is the current frontier for humanity. All land has been explored, and now we're building new land in an abstract space.
-			I want to explore that space, and build it out even further.</p>
-
-          <h3>Where I'm at with code</h3>
-          <p>I am currently looking to delve into the business side of web development. For example, building digital services, products</p>
         </div>
 
       </div>
