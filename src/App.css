@@ -166,3 +166,7 @@ h3{
   font-size: 18px;
   word-break: break-all;
 }
+
+.contactButton{
+  max-width: fit-content;
+}
