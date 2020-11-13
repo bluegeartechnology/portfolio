@@ -162,7 +162,6 @@ function App() {
 
 
 
-
             <div className="btn btn-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 ">
               <div className="my-3 rounded projectImageDiv align-middle">
                 <img src="\tomatokei.png" alt="" className='rounded my-auto' />
@@ -224,7 +223,12 @@ function App() {
                 <h3 className='text-center text-dark'>ReactJS</h3>
               </div>
 
-              <img className='skillIcon col-lg-2 col-sm-5 col-6 hvr-bob' src="mongodb.png" alt=""/>
+              <div className='col-lg-2 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'>
+                <img className='skillIcon col-12' src="mongodb.png" alt="" />
+                <h3 className='text-center text-dark'>mongoDB</h3>
+              </div>
+
+
 
 
 
@@ -311,7 +315,7 @@ function App() {
               <h3 id='github' className='text-center' >GitHub</h3>
             </a>
 
-            <a href='https://youtube.com/' target='blank' className='contactLink text-center text-primary btn col-12 col-sm-6 col-md-4 col-lg-3'>
+            <a href='https://linkedin.com/' target='blank' className='contactLink text-center text-primary btn col-12 col-sm-6 col-md-4 col-lg-3'>
               <i className="fa fa-linkedin-square fa-5x mx-auto"></i>
               <h3 id='youtube' >LinkedIn</h3>
             </a>
@@ -329,6 +333,11 @@ function App() {
 
         </div>
 
+      </div>
+
+
+      <div id="footer" className='bg-light p-2'>
+        <h6 className='text-dark m-0 text-center'>© 2020 BlueGearTechnology</h6>
       </div>
 
 
