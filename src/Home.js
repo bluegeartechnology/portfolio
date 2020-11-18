@@ -42,20 +42,42 @@ const Home = () => {
 
 
             <div id="about" className="bg-light px-2 py-5 my-5">
-                <div id="aboutContainer" className='container px-2 py-5 my-4'>
+                <div id="aboutContainer" className='container px-5 py-5 my-4'>
                     <h2 className='mb-2'>About Me</h2>
 
-                    <h3>Why I Got Into Code</h3>
+                    <h3>Why I Code</h3>
+                    <p>
+                        I've always been fascinated by systems.
+                        The interplay of components which yields an end result.
+                        I enjoy constructing such systems, and seeing how that system can be modified to yield a different, more desirable result.
+                    </p>
 
-                    <h3>Why I like It</h3>
-                    <p>Coding is equal parts puzzle solving and engineering. Every puzzle solved yields a new machine which affects the universe.</p>
+                    <p>
+                        Coding is equal parts puzzle solving and engineering.
+                        Every puzzle solved yields a new machine which affects the universe.
+                        There are few endeavors more intrinsically satisfying than that.
+                    </p>
 
-                    <h3>Why I want to be a developer</h3>
-                    <p>Information is the current frontier for humanity, in a literal sense. All land has been explored, and now we're building new lands in an abstract space. Programming is the means to explore and settle that frontier.
-    I want to explore that space, and build it out even further.</p>
+                    <h3>Why I'm a Developer</h3>
+                    <p>
+                        Information is the current frontier for humanity, in a literal sense.
+                        All physical land has been explored, and now we're building new lands in an abstract space.
+                        Programming is the means to explore and settle that frontier.
+                        I want to explore that space, and build it out even further.
+                    </p>
 
-                    <h3>Where I'm at with code</h3>
-                    <p>I am currently looking to delve into the business side of web development. For example, building digital services, products</p>
+                    <h3>Current Goals and Future Plans</h3>
+                    <p>
+                        I'm currently delving into the business side of web development.
+                        I see this as a necessary waypoint toward other, more idealistic goals.
+                        No amount of idealism changes the world by itself.
+                    </p>
+
+                    <p>
+                        Programming, especially web development, represents real opportunity to affect the world, and even the behaviors and future of mankind itself.
+                        I think the potential this represents is often not fully appreciated.
+                        I want to push the limits of this opportunity for the betterment of mankind.
+                    </p>
                 </div>
 
             </div>

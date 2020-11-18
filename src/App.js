@@ -14,10 +14,10 @@ function App() {
 
         <div className="row-col d-flex justify-content-around ">
           <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#home">Home</a>
-          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="#about">About</a>
-          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="#portfolio">Portfolio</a>
-          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="#skills">Skills</a>
-          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="#contact">Contact</a>
+          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#about">About</a>
+          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#portfolio">Portfolio</a>
+          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#skills">Skills</a>
+          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#contact">Contact</a>
 
         </div>
       </nav>
