@@ -78,9 +78,8 @@ const tomatokei = () => {
 
 
 
-                    <h2>If I had to do it again...</h2>
+                    <h2>What I learned</h2>
                     <p>
-                        What wouldn't I do differently?
                         This was my first truly full-stack application where everything really clicked and I knew what I was doing.
                         As such, there was a lot of trial and error along the way, and it shows.
                         I learned so much from this project, it's hard to think of anything that wouldn't be improved by a total rewrite.
@@ -88,7 +87,8 @@ const tomatokei = () => {
                     </p>
                     <ul>
                         <li>
-                            There were many, many revisions to the structure of the MongoDB database, because I initially didn't understand schemas.
+                            There were many, many revisions to the structure of the MongoDB database, because I initially didn't understand Mongoose, schemas, and other related concepts.
+                            I also hadn't fully conceptualized the strucutre of the system, and as such, wound up backtracking repeatedly to
                         </li>
                         <li>
                             Because this was the first time I'd attempted understanding and implementing an authentication system, it's built from scratch based on tutorials.
