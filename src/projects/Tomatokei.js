@@ -79,12 +79,24 @@ const tomatokei = () => {
 
 
                     <h2>If I had to do it again...</h2>
-                    <p>What WOULDN'T I do differently? This was my first truly full-stack application where everything really clicked and I knew what I was doing. As such, there was a lot of trial and error along the way, and it shows.
-    I learned so much from this project, it's hard to think of anything that wouldn't be improved by a total rewrite. However, some of the biggest points are as follows:</p>
+                    <p>
+                        What wouldn't I do differently?
+                        This was my first truly full-stack application where everything really clicked and I knew what I was doing.
+                        As such, there was a lot of trial and error along the way, and it shows.
+                        I learned so much from this project, it's hard to think of anything that wouldn't be improved by a total rewrite.
+                        However, some of the biggest points are as follows:
+                    </p>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>
+                            There were many, many revisions to the structure of the MongoDB database, because I initially didn't understand schemas.
+                        </li>
+                        <li>
+                            Because this was the first time I'd attempted understanding and implementing an authentication system, it's built from scratch based on tutorials.
+                            There was little practical reason to do this other than learning, and I would definitely avoid reinventing the wheel in the future, and use something like Passport instead.
+                        </li>
+                        <li>
+
+                        </li>
                     </ul>
                 </div>
 
