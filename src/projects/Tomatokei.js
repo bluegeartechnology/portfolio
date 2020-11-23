@@ -12,8 +12,8 @@ const tomatokei = () => {
                 </div>
 
                 <div className="row justify-content-center d-flex p-2">
-                    <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1"><i className="fa fa-globe"></i> Visit On Heroku</button></a>
-                    <button className="btn btn-success mx-1" onClick={
+                    <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit On Heroku</button></a>
+                    <button className="btn btn-success mx-1 my-1" onClick={
                         () => {
                             document.getElementById('imageAndEmbed').innerHTML = `<iframe id='embeddedApp' className='mx-auto' src="https://tomatokei.herokuapp.com" frameborder="1"></iframe>`
                             document.getElementById('embeddedApp').width = window.innerWidth
@@ -22,9 +22,9 @@ const tomatokei = () => {
 
                     }>
                         <i className="fa fa-play"></i>
-                            Embed Here
+                            &nbsp;Embed Here
                             </button>
-                    <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-dark mx-1"><i className="fa fa-github"></i> GitHub</button></a>
+                    <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-dark mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
                 </div>
 
                 <div className='container'>
@@ -33,7 +33,7 @@ const tomatokei = () => {
 
                     <h2>How does it work?</h2>
                     <p>
-                        Tomatokei is built around the <a target='blank' href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a> and various ADHD coping mechanisms.
+                        Tomatokei is built around the <a target='blank' href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a> and various ADHD coping strategies.
                     </p>
                     <p>
                         In particular, it operates on the assumtion that the user:
@@ -49,7 +49,7 @@ const tomatokei = () => {
                             May need assistance in remembering the steps in a task
                         </li>
                         <li>
-                            May need assistance in remembering their place in a sequence of tasks
+                            May need assistance in remembering their place in a sequence of steps or tasks
                         </li>
                         <li>
                             Is likely to become distracted or frustrated by overstimulation, and lose their focus or interest in a task
@@ -132,7 +132,7 @@ const tomatokei = () => {
                     <p>
                         This was my first truly full-stack application where everything really clicked and I knew what I was doing.
                         As such, there was a lot of trial and error along the way, and it shows.
-                        I learned so much from this project, it's hard to think of anything that wouldn't be improved by a total rewrite.
+                        I learned so much from this project that it's hard to think of any part that wouldn't be improved by a total rewrite.
                         However, some of the biggest points are as follows:
                     </p>
                     <ul>

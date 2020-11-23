@@ -10,25 +10,29 @@ function App() {
   return (
     <div className="App">
 
-      <nav id='navbar' className='bg-light'>
 
-        <div className="row-col d-flex justify-content-around ">
-          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#home">Home</a>
-          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#about">About</a>
-          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#portfolio">Portfolio</a>
-          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#skills">Skills</a>
-          <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#contact">Contact</a>
-
-        </div>
-      </nav>
-
-
-      <div className="d-hidden" id="home"></div>
 
       <Router>
+
+        <nav id='navbar' className='bg-light'>
+
+          <div className="row-col d-flex justify-content-around ">
+            <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#home">Home</a>
+            <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#about">About</a>
+            <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#portfolio">Portfolio</a>
+            <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#skills">Skills</a>
+            <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#contact">Contact</a>
+
+          </div>
+        </nav>
+
+
+        <div className="d-hidden" id="home"></div>
+
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/tomatokei' component={Tomatokei} />
+          <Route path='/projects' component={Tomatokei} />
         </Switch>
       </Router>
 

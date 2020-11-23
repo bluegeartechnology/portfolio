@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -41,9 +42,9 @@ const Home = () => {
             </header>
 
 
-            <div id="about" className="bg-light px-2 py-5 my-5">
-                <div id="aboutContainer" className='container px-5 py-5 my-4'>
-                    <h2 className='mb-2'>About Me</h2>
+            <div id="about" className="bg-light ">
+                <div id="aboutContainer" className='container py-5 mb-4'>
+                    <h2 className=''>About Me</h2>
 
                     <h3>Why I Code</h3>
                     <p>
@@ -104,9 +105,9 @@ const Home = () => {
                                 <p>Designed to help manage ADHD symptoms and stay on task.</p>
                                 <p>Integrated with Google Calendar for optimal ease of use.</p>
                                 <div className="row justify-content-center d-flex p-2">
-                                    <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1"><i className="fa fa-globe"></i> Visit</button></a>
-                                    <a href="./tomatokei" ><button className="btn btn-success mx-1"><i className="fa fa-bar-chart"></i> Details</button></a>
-                                    <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-dark mx-1"><i className="fa fa-github"></i> GitHub</button></a>
+                                    <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit</button></a>
+                                    <Link to="./tomatokei" ><button className="btn btn-success mx-1 my-1"><i className="fa fa-bar-chart"></i>&nbsp;Details</button></Link>
+                                    <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-dark mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
                                 </div>
 
                             </div>
@@ -181,7 +182,7 @@ const Home = () => {
 
                     </div>
 
-                    <a href="/projects"><button className='btn btn-warning d-block mx-auto'><h3>See Even More Projects!</h3></button></a>
+                    <Link to="/projects"><button className='btn btn-warning d-block mx-auto'><h3>See Even More Projects!</h3></button></Link>
 
                 </div>
 
@@ -192,7 +193,7 @@ const Home = () => {
 
             <div id="skills" className='bg-light '>
 
-                <div id="skillsContainer" className='container p-4 mb-4'>
+                <div id="skillsContainer" className='container py-5 mb-4'>
                     <h2>Skills</h2>
 
 
@@ -283,7 +284,7 @@ const Home = () => {
 
             <div id="contact" className='bg-light '>
 
-                <div id="contactContainer" className='container p-5 mb-5'>
+                <div id="contactContainer" className='container py-5 mb-5'>
                     <h2>Contact</h2>
 
                     <h3 className='text-center py-5'>Let's work together.</h3>
