@@ -30,7 +30,57 @@ const tomatokei = () => {
                 <div className='container'>
                     <h2>What is it?</h2>
                     <p>Tomatokei is a Pomodoro Clock and Time Management Tool. In particular, it exists to help manage ADHD symptoms and keep users on task.</p>
+
                     <h2>How does it work?</h2>
+                    <p>
+                        Tomatokei is built around the <a target='blank' href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a> and various ADHD coping mechanisms.
+                    </p>
+                    <p>
+                        In particular, it operates on the assumtion that the user:
+                    </p>
+                    <ul>
+                        <li>
+                            Has difficulty paying attention to a given task for long spans of time
+                        </li>
+                        <li>
+                            Requires frequent, small breaks to avoid mental burnout
+                        </li>
+                        <li>
+                            May need assistance in remembering the steps in a task
+                        </li>
+                        <li>
+                            May need assistance in remembering their place in a sequence of tasks
+                        </li>
+                        <li>
+                            Is likely to become distracted or frustrated by overstimulation, and lose their focus or interest in a task
+                        </li>
+                        <li>
+                            May have difficulty organizing a complex task into simple steps, and following those steps in a sequence without becoming frustrated
+                        </li>
+                    </ul>
+                    <p>
+                        Of course, all of these difficulties can affect people without ADHD to some degree, but they exist to an extreme degree in those with it.
+                    </p>
+                    <p>
+                        Tomatokei seeks to alleviate these issues by offering the end user a visually minimalist task and project management system that guides the user through a path of their own creation.
+                        This is done by empowering the user with a series of tools.
+                    </p>
+
+
+                    <p>
+                        A user can create projects and tasks. A project is a framework which holds individual tasks, and their association to one another.
+                        The user can take notes as meticulously (or not) as they like within both the project and the task itself.
+                    </p>
+
+                    <p>
+                        From there, each task within the project is associated with settings on a Pomodoro Clock, and the user is kept on-task by this clock.
+                        The Pomodoro Technique is particularly suited to assisting people suffering from ADHD.
+                        It provides an inherent safeguard from prolonged distraction, and reminders to stay on task, yet also encourages the user to take breaks, which ADHD sufferrers require in order to avoid burnout.
+                    </p>
+
+                    <p>
+                        Once the user is happy with a project or task, they can organize themselves even further by sending it directly to Google Calendar.
+                    </p>
 
                     <h2>Technologies Used</h2>
                     <div className="text-light my-5">
@@ -88,7 +138,7 @@ const tomatokei = () => {
                     <ul>
                         <li>
                             There were many, many revisions to the structure of the MongoDB database, because I initially didn't understand Mongoose, schemas, and other related concepts.
-                            I also hadn't fully conceptualized the strucutre of the system, and as such, wound up backtracking repeatedly to
+                            I also hadn't fully conceptualized the strucutre of the system, and as such, wound up repeatedly refactoring the database's structure.
                         </li>
                         <li>
                             Because this was the first time I'd attempted understanding and implementing an authentication system, it's built from scratch based on tutorials.
