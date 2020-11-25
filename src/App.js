@@ -6,6 +6,8 @@ import "hover.css"
 import Home from './Home'
 import Tomatokei from './projects/Tomatokei'
 
+import ScrollToTop from './ScrollToTop'
+
 function App() {
   return (
     <div className="App">
@@ -13,15 +15,16 @@ function App() {
 
 
       <Router>
+        <ScrollToTop />
 
         <nav id='navbar' className='bg-light'>
 
           <div className="row-col d-flex justify-content-around ">
-            <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#home">Home</a>
-            <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#about">About</a>
-            <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#portfolio">Portfolio</a>
-            <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#skills">Skills</a>
-            <a className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} href="/#contact">Contact</a>
+            <a href="/" className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`}>Home</a>
+            <a href="/#about" className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`}>About</a>
+            <a href="/#portfolio" className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`}>Portfolio</a>
+            <a href="/#skills" className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`}>Skills</a>
+            <a href="/#contact" className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`}>Contact</a>
 
           </div>
         </nav>

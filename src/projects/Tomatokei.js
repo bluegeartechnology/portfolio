@@ -1,18 +1,19 @@
 import React from 'react'
 
-const tomatokei = () => {
+const Tomatokei = () => {
     return (
         <div id="portfolio" className='py-5 my-4  text-light'>
-            <div className="">
-                <h1 className='text-center'>Tomatokei</h1>
+            <div className="animate__animated animate__fadeIn">
+                <h2 className='text-center col-9 mx-auto'>Tomatokei</h2>
 
 
-                <div id='imageAndEmbed' className="my-3 rounded mx-auto d-flex justify-content-center col-11">
+                <div id='imageAndEmbed' className="my-3 rounded mx-auto d-flex justify-content-center col-11 col-lg-6">
                     <img width='100%' src="\tomatokei.png" alt="" className='rounded my-auto' />
                 </div>
 
                 <div className="row justify-content-center d-flex p-2">
                     <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit On Heroku</button></a>
+
                     <button className="btn btn-success mx-1 my-1" onClick={
                         () => {
                             document.getElementById('imageAndEmbed').innerHTML = `<iframe id='embeddedApp' className='mx-auto' src="https://tomatokei.herokuapp.com" frameborder="1"></iframe>`
@@ -21,13 +22,19 @@ const tomatokei = () => {
                         }
 
                     }>
-                        <i className="fa fa-play"></i>
+                        <i className="fa fa-arrow-down"></i>
                             &nbsp;Embed Here
                             </button>
+
+                    <button className='btn btn-danger mx-1 my-1'>
+                        <i className="fa fa-play"></i>
+                            &nbsp;Watch Video
+                    </button>
+
                     <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-dark mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
                 </div>
 
-                <div className='container'>
+                <div className='container bg-dark rounded px-5 py-4 my-3'>
                     <h2>What is it?</h2>
                     <p>Tomatokei is a Pomodoro Clock and Time Management Tool. In particular, it exists to help manage ADHD symptoms and keep users on task.</p>
 
@@ -156,4 +163,4 @@ const tomatokei = () => {
     )
 }
 
-export default tomatokei
+export default Tomatokei

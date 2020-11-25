@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
-        <div>
+        <div className=' animate__animated animate__fadeIn'>
 
             <header className="App-header">
 
@@ -142,11 +142,13 @@ const Home = () => {
                                 <div className="d-flex flex-column justify-content-between">
                                     <h3>Portfolio Site</h3>
                                     <small>Yes, the very portfolio site you're looking at right now!</small>
+                                    <br />
+                                    <br />
 
                                     <p>Serves as a playground for me to flex new skills I've learned.</p>
                                     <p>Come take a look under the hood at GitHub.</p>
                                     <div className="row justify-content-center d-flex p-2">
-                                        <a href="" onClick={(e) => { e.preventDefault(); alert(`You're already here, wise guy.`) }}><button className="btn btn-primary mx-1"><i className="fa fa-globe"></i> Visit</button></a>
+                                        <a href="/#" onClick={(e) => { e.preventDefault(); alert(`You're already here, wise guy.`) }}><button className="btn btn-primary mx-1"><i className="fa fa-globe"></i> Visit</button></a>
                                         <a href="./portfolio" ><button className="btn btn-success mx-1"><i className="fa fa-bar-chart"></i> Details</button></a>
                                         <a href="https://github.com/bluegeartechnology/portfolio" target='blank'><button className="btn btn-dark mx-1"><i className="fa fa-github"></i> GitHub</button></a>
                                     </div>
