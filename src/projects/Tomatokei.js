@@ -1,6 +1,18 @@
 import React from 'react'
+import { useLocation, BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { useEffect } from 'react'
+
+function useHistory() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+}
 
 const Tomatokei = () => {
+
+
+    useHistory();
+
     return (
         <div id="portfolio" className='py-5 my-4  text-light'>
             <div className="animate__animated animate__fadeIn">
@@ -26,7 +38,10 @@ const Tomatokei = () => {
                             &nbsp;Embed Here
                             </button>
 
-                    <button className='btn btn-danger mx-1 my-1'>
+                    <button className='btn btn-danger mx-1 my-1' onClick={() => {
+                        document.getElementById('imageAndEmbed').innerHTML = `<iframe id='embeddedApp' width="784" height="441" src="https://www.youtube.com/embed/03yBSzj7vKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+
+                    }}>
                         <i className="fa fa-play"></i>
                             &nbsp;Watch Video
                     </button>

@@ -2,6 +2,10 @@
 /*BEGIN REACT BOILERPLATE*/
 /*!!!!!!!!!!!!!!!!!!!!!!!*/
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-size: 18px!important;
 }

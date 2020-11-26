@@ -1,7 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 const Home = () => {
+
+    let history = useHistory();
+
     return (
         <div className=' animate__animated animate__fadeIn'>
 
@@ -93,7 +96,9 @@ const Home = () => {
                     <div className="d-flex row justify-content-around my-5 mx-auto">
 
 
-                        <a href="https://tomatokei.herokuapp.com" target='blank' className="btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 hvr-bob">
+                        <div className="btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 hvr-bob" onClick={() => {
+                            history.push('/tomatokei')
+                        }}>
                             <div>
                                 <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
                                     <img src="\tomatokei.png" alt="" className='rounded my-auto' />
@@ -111,7 +116,7 @@ const Home = () => {
                                 </div>
 
                             </div>
-                        </a>
+                        </div>
 
 
                         <a href="https://jystdev.herokuapp.com" target='blank' className="btn btn-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 hvr-bob">
@@ -184,7 +189,7 @@ const Home = () => {
 
                     </div>
 
-                    <Link to="/projects"><button className='btn btn-warning d-block mx-auto'><h3>See Even More Projects!</h3></button></Link>
+                    <Link to="/projects" className='text-decoration-none'><button className='btn btn-warning d-block mx-auto'><h3>See Even More Projects!</h3></button></Link>
 
                 </div>
 
