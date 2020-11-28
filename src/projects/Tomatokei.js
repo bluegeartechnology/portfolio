@@ -130,6 +130,11 @@ const Tomatokei = () => {
                         </div>
 
                         <div className='col-lg-2 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'>
+                            <img className='skillIcon col-12' src="redux.png" alt="" />
+                            <h3 className='text-center'>Redux</h3>
+                        </div>
+
+                        <div className='col-lg-2 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'>
                             <img className='skillIcon col-12' src="mongodb.png" alt="" />
                             <h3 className='text-center'>mongoDB</h3>
                         </div>

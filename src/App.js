@@ -6,6 +6,7 @@ import "animate.css"
 import "hover.css"
 import Home from './Home'
 import Tomatokei from './projects/Tomatokei'
+import JYST from './projects/JYST'
 
 import ScrollToTop from './ScrollToTop'
 
@@ -42,8 +43,9 @@ function App() {
 
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/tomatokei' component={Tomatokei} />
           <Route path='/projects' component={Tomatokei} />
+          <Route path='/tomatokei' component={Tomatokei} />
+          <Route path='/JYST' component={JYST} />
         </Switch>
       </Router>
 
