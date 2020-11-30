@@ -20,6 +20,7 @@ const JYST = () => {
 
 
                 <div id='imageAndEmbed' className="my-3 rounded mx-auto d-flex justify-content-center col-11 col-lg-3">
+                    <iframe className='d-none' src="https://downforeveryoneorjustme.com/jystdev.herokuapp.com" frameborder="1"></iframe>
                     <img width='100%' src="\JYST.png" alt="" className='rounded my-auto' />
                 </div>
 

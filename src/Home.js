@@ -46,7 +46,7 @@ const Home = () => {
 
 
             <div id="about" className="bg-light ">
-                <div id="aboutContainer" className='container py-5 mb-4'>
+                <div id="aboutContainer" className='container py-5 mb-4 '>
                     <h2 className=''>About Me</h2>
 
                     <h3>Why I Code</h3>
@@ -206,11 +206,11 @@ const Home = () => {
             <div id="skills" className='bg-light '>
 
                 <div id="skillsContainer" className='container py-5 mb-4'>
-                    <h2>Skills</h2>
+                    <h2>Skills & Certifications</h2>
 
 
 
-                    <div className='my-4'>
+                    <div className='my-4 bg-white px-4 py-4 rounded border'>
 
                         <h3 className='text-center my-5'>Web Development Skills</h3>
 
@@ -277,7 +277,7 @@ const Home = () => {
 
                     </div>
 
-                    <div className="my-4">
+                    <div className="my-4 bg-white px-2 py-4 rounded border">
                         <h3 className='text-center my-5'>Digital Media Skills</h3>
 
                         <img className='skillIcon col-lg-2 col-sm-5 col-6 hvr-bob' src="photoshop.png" alt="" />
@@ -288,6 +288,20 @@ const Home = () => {
 
 
 
+                    <div className="my-4 bg-white px-2 py-4 rounded border">
+                        <h3 className='text-center my-5'>Certifications</h3>
+
+                        <div className='my-2 col-lg-2 col-sm-5 col-6 hvr-bob'>
+                            <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
+                            <h4 className='text-center text-dark'>Google Ads<br />Search</h4>
+                        </div>
+
+                        <div className='my-2 col-lg-2 col-sm-5 col-6 hvr-bob'>
+                            <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
+                            <h4 className='text-center text-dark'>Paraben <br /> DSMO-DS</h4>
+                        </div>
+
+                    </div>
 
 
 
@@ -307,7 +321,7 @@ const Home = () => {
                     <h3 className='text-center py-5'>Let's work together.</h3>
 
 
-                    <div className="d-flex row justify-content-center my-5 ">
+                    <div className="d-flex row justify-content-center my-5">
 
                         <div target='blank' className='contactLink text-center text-primary mx-2'>
                             <a href='mailto:joshc@bluegeartechnology.com' className="mx-auto btn text-primary">

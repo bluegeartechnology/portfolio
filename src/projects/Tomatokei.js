@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 function useHistory() {
     useEffect(() => {
         window.scrollTo(0, 0)
+        document.getElementById('imageAndEmbed').innerHTML = `<img width='100%' src="\/tomatokei.png" alt="" className='rounded my-auto' />`
     }, []);
 }
 
@@ -20,7 +21,7 @@ const Tomatokei = () => {
 
 
                 <div id='imageAndEmbed' className="my-3 rounded mx-auto d-flex justify-content-center col-11 col-lg-6">
-                    <img width='100%' src="\tomatokei.png" alt="" className='rounded my-auto' />
+
                 </div>
 
                 <div className="row justify-content-center d-flex p-2">
