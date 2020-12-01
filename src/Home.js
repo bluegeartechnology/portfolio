@@ -146,7 +146,7 @@ const Home = () => {
                         <a href="#portfolio" onClick={(e) => { }} className="btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 hvr-bob">
                             <div>
                                 <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
-                                    <img src="\tomatokei.png" alt="" className='rounded my-auto' />
+                                    <img src="\portfoliosite.png" alt="" className='rounded my-auto' />
                                 </div>
 
                                 <div className="d-flex flex-column justify-content-between">
