@@ -98,6 +98,13 @@ z-index: -10000;
 
 }
 
+#footer{
+  position: absolute;
+  z-index: 10000;
+  background-color: red;
+  width: 100vw;
+}
+
 #headerJumbotron{
   opacity: 1!important;
   box-shadow: 2px 4px 8px gray;
