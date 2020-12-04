@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div id="about" className="bg-light animate__animated animate__fadeIn">
-            <div id="aboutContainer" className='container py-5 mb-4 '>
+        <div id="about" className="bg-light animate__animated animate__fadeIn h-100 row align-items-center">
+            <div id="aboutContainer" className='container  px-5 py-4 border rounded shadow animate__animated animate__fadeInDown'>
                 <h2 className=''>About Me</h2>
 
                 <h3>Why I Code</h3>

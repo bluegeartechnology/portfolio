@@ -3,7 +3,7 @@
 /*!!!!!!!!!!!!!!!!!!!!!!!*/
 
 html{
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
 }
 
 body{
@@ -13,6 +13,7 @@ body{
 
 .App {
   /*text-align: center;*/
+  height: 100vh;
 }
 
 .App-logo {
@@ -31,7 +32,7 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
+  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -103,7 +104,6 @@ z-index: -10000;
   position: fixed;
   bottom:0;
   z-index: 10000;
-  background-color: red;
   width: 100vw;
 }
 
@@ -168,6 +168,7 @@ h3{
 .projectImageDiv{
   
   height: 200px;
+  width: 100%;
   max-height: 200px!important;
   
 }
@@ -175,7 +176,7 @@ h3{
 .projectImageDiv>img{
   max-height: 100%;
   max-width: 100%;
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
   box-shadow: 2px 4px 8px gray;
 }
 
@@ -191,3 +192,4 @@ h3{
 .skillIcon{
   
 }
+

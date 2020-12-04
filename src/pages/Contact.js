@@ -2,9 +2,9 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div id="contact" className='bg-light animate__animated animate__fadeIn'>
+        <div id="contact" className='bg-light animate__animated animate__fadeIn h-100 row align-items-center'>
 
-            <div id="contactContainer" className='container py-5 mb-5'>
+            <div id="contactContainer" className='container px-5 py-4 border rounded shadow '>
                 <h2>Contact</h2>
 
                 <h3 className='text-center py-5'>Let's work together.</h3>
@@ -50,7 +50,6 @@ const Contact = () => {
 
                 </div>
 
-                <hr />
 
 
 
