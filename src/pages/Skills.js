@@ -88,6 +88,8 @@ const Skills = () => {
 
                         <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="premiere.png" alt="" />
 
+                        <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="audition.png" alt="" />
+
                     </div>
 
 
