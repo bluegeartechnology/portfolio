@@ -12,8 +12,6 @@ const Skills = () => {
 
 
 
-
-
                     <div className='my-4 bg-light px-4 py-4 rounded border '>
 
                         <h3 className='text-center my-5'>Web Development Skills</h3>
@@ -87,6 +85,8 @@ const Skills = () => {
                         <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="photoshop.png" alt="" />
 
                         <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="premiere.png" alt="" />
+
+                        <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="aftereffects.png" alt="" />
 
                         <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="audition.png" alt="" />
 
