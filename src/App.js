@@ -30,6 +30,7 @@ function App() {
 
       <Router>
 
+        <ScrollToTop />
 
         <nav id='navbar' className='bg-light'>
 
@@ -38,8 +39,7 @@ function App() {
             <HashLink to="/about" className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`}>About</HashLink>
             <HashLink to="/portfolio" className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`}>Portfolio</HashLink>
             <HashLink to="/skills" className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`}>Skills</HashLink>
-            <HashLink to="/contact" className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`}>Contact</HashLink>
-
+            <HashLink to="/contact" className={`App-link btn btn-light ${window.innerWidth < 360 ? 'px-0' : ''}`} >Contact</HashLink>
           </div>
         </nav>
 
