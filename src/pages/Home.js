@@ -33,6 +33,9 @@ const Home = () => {
 
 
                         <h4 className='animate__animated animate__fadeIn mb-0'>Full Stack Web Developer</h4>
+
+
+
                     </div>
 
 
