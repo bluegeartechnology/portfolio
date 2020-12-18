@@ -1,7 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
 const Portfolio = () => {
+
+    useEffect(() => {
+
+        Array.from(document.getElementsByClassName('portfolioProjectCard')).map((card, i) => {
+            card.style.visibility = "hidden";
+
+            setTimeout(() => {
+                card.classList.add('animate__animated', 'animate__fadeInUp')
+                card.style.visibility = "visible";
+            }
+                , 250 + (250 * i))
+
+            setTimeout(() => {
+                card.classList.remove('animate__animated', 'animate__fadeInUp')
+                card.classList.add('hvr-bob')
+            }
+                , 1200 + (250 * i))
+
+        })
+
+
+
+    }, [])
 
     let history = useHistory();
 
@@ -15,7 +38,7 @@ const Portfolio = () => {
                 <div className="d-flex row justify-content-around my-5 mx-auto">
 
 
-                    <div className="btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 hvr-bob" onClick={() => {
+                    <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
                         history.push('/tomatokei')
                     }}>
                         <div>
@@ -41,7 +64,7 @@ const Portfolio = () => {
                     </div>
 
 
-                    <div className="btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 hvr-bob" onClick={() => {
+                    <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
                         history.push('/JYST')
                     }}>
                         <div>
@@ -63,7 +86,7 @@ const Portfolio = () => {
                     </div>
 
 
-                    <div className="btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 hvr-bob" onClick={() => {
+                    <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
                         history.push('/PortfolioSite')
                     }}>
                         <div>
@@ -92,14 +115,14 @@ const Portfolio = () => {
 
 
 
-                    <div className="btn btn-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 ">
+                    <div className="portfolioProjectCard btn btn-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 ">
                         <h3>ACCESS</h3>
                     </div>
 
 
 
 
-                    <div className="btn btn-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 ">
+                    <div className="portfolioProjectCard btn btn-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 ">
                         <div className="my-3 rounded projectImageDiv align-middle">
                             <img src="\tomatokei.png" alt="" className='rounded my-auto' />
                         </div>
