@@ -9,13 +9,13 @@ const Portfolio = () => {
             card.style.visibility = "hidden";
 
             setTimeout(() => {
-                card.classList.add('animate__animated', 'animate__fadeInUp')
+                card.classList.add('animate__animated', 'animate__fadeInRight')
                 card.style.visibility = "visible";
             }
                 , 250 + (250 * i))
 
             setTimeout(() => {
-                card.classList.remove('animate__animated', 'animate__fadeInUp')
+                card.classList.remove('animate__animated', 'animate__fadeInRight')
                 card.classList.add('hvr-bob')
             }
                 , 1200 + (250 * i))
@@ -29,7 +29,7 @@ const Portfolio = () => {
     let history = useHistory();
 
     return (
-        <div id="portfolio" className='text-light animate__animated animate__fadeIn'>
+        <div id="portfolio" className='text-light animate__animated animate__fadeIn overflow-hidden'>
 
             <div id="portfolioContainer" className='py-5 my-4 mb-4'>
 
