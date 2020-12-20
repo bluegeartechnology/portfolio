@@ -20,7 +20,7 @@ const Skills = () => {
 
 
 
-                    <button id='webdevSkillsButton' class="btn btn-primary my-4 w-100" type="button" data-toggle="collapse" data-target="#webdevSkills" aria-expanded="false" aria-controls="webdevSkills">
+                    <button id='webdevSkillsButton' class="btn btn-primary my-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#webdevSkills" aria-expanded="false" aria-controls="webdevSkills">
                         <h3 className='text-center my-2'>Web Development Skills <i className="fa fa-arrow-down"></i></h3>
                     </button>
 
@@ -97,7 +97,7 @@ const Skills = () => {
 
                     </div>
 
-                    <button class="btn btn-success my-4 w-100" type="button" data-toggle="collapse" data-target="#digitalMediaSkills" aria-expanded="false" aria-controls="digitalMediaSkills">
+                    <button class="btn btn-success my-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#digitalMediaSkills" aria-expanded="false" aria-controls="digitalMediaSkills">
                         <h3 className='text-center my-2'>Digital Media Skills <i className="fa fa-arrow-down"></i></h3>
                     </button>
 
@@ -114,7 +114,7 @@ const Skills = () => {
 
                     </div>
 
-                    <button class="btn btn-danger my-4 w-100" type="button" data-toggle="collapse" data-target="#certifications" aria-expanded="false" aria-controls="certifications">
+                    <button class="btn btn-danger my-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#certifications" aria-expanded="false" aria-controls="certifications">
                         <h3 className='text-center my-2'>Certifications <i className="fa fa-arrow-down"></i></h3>
                     </button>
 

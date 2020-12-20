@@ -54,10 +54,10 @@ const Portfolio = () => {
                                 <p>Integrated with Google Calendar for optimal ease of use.</p>
                             </div>
 
-                            <div className="row justify-content-center d-flex p-2">
+                            <div className="d-flex justify-content-center d-flex p-2">
                                 <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit</button></a>
                                 <Link to="./tomatokei" ><button className="btn btn-success mx-1 my-1"><i className="fa fa-bar-chart"></i>&nbsp;Details</button></Link>
-                                <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-dark mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
+                                <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
                             </div>
 
                         </div>
@@ -77,10 +77,10 @@ const Portfolio = () => {
                             <br />
                             <p>A web app that grabs inventory data from local junkyard websites and APIs, then sorts, displays, and emails that data to clients.</p>
                             <p>Uses web scraping and browser automation. (Cheerio and Puppeteer)</p>
-                            <div className="row justify-content-center d-flex p-2">
+                            <div className="d-flex justify-content-center d-flex p-2">
                                 <a href="https://jystdev.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit</button></a>
                                 <Link to="./JYST" ><button className="btn btn-success mx-1 my-1"><i className="fa fa-bar-chart"></i>&nbsp;Details</button></Link>
-                                <a href="https://github.com/bluegeartechnology/JYST" target='blank'><button className="btn btn-dark mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
+                                <a href="https://github.com/bluegeartechnology/JYST" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
                             </div>
                         </div>
                     </div>
@@ -102,10 +102,10 @@ const Portfolio = () => {
 
                                 <p>Serves as a playground for me to flex new skills I've learned.</p>
                                 <p>Come take a look under the hood at GitHub.</p>
-                                <div className="row justify-content-center d-flex p-2">
+                                <div className="d-flex justify-content-center p-2">
                                     <a href="/#" onClick={(e) => { e.preventDefault(); alert(`You're already here, wise guy.`) }}><button className="btn btn-primary mx-1"><i className="fa fa-globe"></i> Visit</button></a>
                                     <a href="./portfolio" ><button className="btn btn-success mx-1"><i className="fa fa-bar-chart"></i> Details</button></a>
-                                    <a href="https://github.com/bluegeartechnology/portfolio" target='blank'><button className="btn btn-dark mx-1"><i className="fa fa-github"></i> GitHub</button></a>
+                                    <a href="https://github.com/bluegeartechnology/portfolio" target='blank'><button className="btn btn-secondary mx-1"><i className="fa fa-github"></i> GitHub</button></a>
                                 </div>
                             </div>
 
