@@ -22,7 +22,7 @@ const Home = () => {
 
                 {/*<img src={logo} className="App-logo" alt="logo" /> */}
 
-                <div id='headerJumbotron' className="jumbotron container mx-auto align-content-middle text-center overflow-hidden row d-flex justify-content-around ">
+                <div id='headerJumbotron' className="jumbotron container bg-light py-5  mx-auto align-content-middle text-center overflow-hidden row d-flex justify-content-around ">
                     <div id="headshotContainer" className='col-lg-3 col-md-5 col-sm-6 col-6 animate__animated animate__fadeIn'>
                         <img id='headshot' className='rounded' src="./PictureSquared.jpg" alt="" />
                     </div>
