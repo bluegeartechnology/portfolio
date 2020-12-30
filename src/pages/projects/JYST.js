@@ -59,8 +59,8 @@ const JYST = () => {
 
                     <p>
                         Secondarily, it enables consumers to search many yards for their cars simultaneously.
-                        While many junkyards have inventory searches on their websites, and part interchanges exist, there is currently no convenient way for the average person to search many local yards in a time-effective manner.
-                        JYST solves that problem.
+                        While many junkyards have inventory searches on their websites, and part interchanges exist, there is currently no convenient way for the average person to search many local yards for unpulled parts in a time-effective manner.
+                        JYST solves this problem.
                     </p>
 
                     <h2>Technologies Used</h2>
