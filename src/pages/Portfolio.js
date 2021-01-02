@@ -113,6 +113,58 @@ const Portfolio = () => {
                     </div>
 
 
+                    <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
+                        history.push('/tomatokei')
+                    }}>
+                        <div>
+                            <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
+                                <img src="\tomatokei.png" alt="" className='rounded my-auto' onLoad={(e) => e.target.classList.add('animate__animated', 'animate__fadeIn')} />
+                            </div>
+                            <div className='mx-4'>
+                                <h3>OhSee</h3>
+                                <small>An app to alleviate checking-type OCD symptoms.</small>
+                                <br />
+                                <br />
+                                <p>Helps the user to keep track of the things they compulsively check, and prove to themselves that all is well.</p>
+                                <p>"Oh, see? I did remember it after all."</p>
+                            </div>
+
+                            <div className="d-flex justify-content-center d-flex p-2">
+                                <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit</button></a>
+                                <Link to="./tomatokei" ><button className="btn btn-success mx-1 my-1"><i className="fa fa-bar-chart"></i>&nbsp;Details</button></Link>
+                                <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
+                        history.push('/tomatokei')
+                    }}>
+                        <div>
+                            <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
+                                <img src="\tomatokei.png" alt="" className='rounded my-auto' onLoad={(e) => e.target.classList.add('animate__animated', 'animate__fadeIn')} />
+                            </div>
+                            <div className='mx-4'>
+                                <h3>ReciPeace</h3>
+                                <small>Recipie Scaling Tool</small>
+                                <br />
+                                <br />
+                                <p>Scales recipies based on user-given criteria, such as servings, calories, or grams of protein.</p>
+                                <p>Also Looks up foods with the USDA's food database API to quickly get scaled portion sizes.</p>
+                            </div>
+
+                            <div className="d-flex justify-content-center d-flex p-2">
+                                <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit</button></a>
+                                <Link to="./tomatokei" ><button className="btn btn-success mx-1 my-1"><i className="fa fa-bar-chart"></i>&nbsp;Details</button></Link>
+                                <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
+                            </div>
+
+                        </div>
+                    </div>
+
 
 
 
@@ -130,6 +182,31 @@ const Portfolio = () => {
                                 <br />
                                 <p>Food changes mass significantly after being cooked. This can throw calorie-counting measurements way out of whack.</p>
                                 <p>Knowing the difference is extremely useful for both bodybuilding and general weight management.</p>
+                            </div>
+
+                            <div className="d-flex justify-content-center d-flex p-2">
+                                <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit</button></a>
+                                <Link to="./tomatokei" ><button className="btn btn-success mx-1 my-1"><i className="fa fa-bar-chart"></i>&nbsp;Details</button></Link>
+                                <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
+                        history.push('/tomatokei')
+                    }}>
+                        <div>
+                            <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
+                                <img src="\tomatokei.png" alt="" className='rounded my-auto' onLoad={(e) => e.target.classList.add('animate__animated', 'animate__fadeIn')} />
+                            </div>
+                            <div className='mx-4'>
+                                <h3>PrepApp</h3>
+                                <small>App for tracking costs and timing for meal prep.</small>
+                                <br />
+                                <br />
+                                <p>It's hard to figure out meal prep if you don't know how much food you use, or what it will cost.</p>
+                                <p>PrepApp calculates how much food you should buy, how much it will cost, and how long it will take.</p>
                             </div>
 
                             <div className="d-flex justify-content-center d-flex p-2">
@@ -169,31 +246,6 @@ const Portfolio = () => {
                     </div>
 
 
-                    <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
-                        history.push('/tomatokei')
-                    }}>
-                        <div>
-                            <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
-                                <img src="\tomatokei.png" alt="" className='rounded my-auto' onLoad={(e) => e.target.classList.add('animate__animated', 'animate__fadeIn')} />
-                            </div>
-                            <div className='mx-4'>
-                                <h3>OhSee</h3>
-                                <small>An app to alleviate checking-type OCD symptoms.</small>
-                                <br />
-                                <br />
-                                <p>Helps the user to keep track of the things they compulsively check, and prove to themselves that all is well.</p>
-                                <p>"Oh, see? I did remember it after all."</p>
-                            </div>
-
-                            <div className="d-flex justify-content-center d-flex p-2">
-                                <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit</button></a>
-                                <Link to="./tomatokei" ><button className="btn btn-success mx-1 my-1"><i className="fa fa-bar-chart"></i>&nbsp;Details</button></Link>
-                                <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
-                            </div>
-
-                        </div>
-                    </div>
-
 
                     <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
                         history.push('/tomatokei')
@@ -203,7 +255,7 @@ const Portfolio = () => {
                                 <img src="\tomatokei.png" alt="" className='rounded my-auto' onLoad={(e) => e.target.classList.add('animate__animated', 'animate__fadeIn')} />
                             </div>
                             <div className='mx-4'>
-                                <h3>Lifter</h3>
+                                <h3>LiftOffice</h3>
                                 <small>An app for keeping track of weightlifting progression.</small>
                                 <br />
                                 <br />
@@ -220,31 +272,6 @@ const Portfolio = () => {
                         </div>
                     </div>
 
-
-                    <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
-                        history.push('/tomatokei')
-                    }}>
-                        <div>
-                            <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
-                                <img src="\tomatokei.png" alt="" className='rounded my-auto' onLoad={(e) => e.target.classList.add('animate__animated', 'animate__fadeIn')} />
-                            </div>
-                            <div className='mx-4'>
-                                <h3>ReciPeace</h3>
-                                <small>Scales recipies based on user-given criteria, such as servings, calories, or grams of protein.</small>
-                                <br />
-                                <br />
-                                <p>Also Looks up foods with the USDA's food database API to quickly get scaled portion sizes.</p>
-                                <p></p>
-                            </div>
-
-                            <div className="d-flex justify-content-center d-flex p-2">
-                                <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit</button></a>
-                                <Link to="./tomatokei" ><button className="btn btn-success mx-1 my-1"><i className="fa fa-bar-chart"></i>&nbsp;Details</button></Link>
-                                <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
-                            </div>
-
-                        </div>
-                    </div>
 
 
 
