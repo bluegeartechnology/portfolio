@@ -13,7 +13,7 @@ const Skills = () => {
     return (
         <div id="skills" className='bg-light animate__animated animate__fadeIn'>
 
-            <div id="skillsContainer" className='container py-5 mb-4'>
+            <div id="skillsContainer" className='container col-12 col-xs-12 col-md-10 col-lg-10 col-xl-8 py-5 mb-4'>
 
                 <div className='my-4 bg-white px-4 py-4 rounded border shadow'>
                     <h2>Skills & Certifications</h2>

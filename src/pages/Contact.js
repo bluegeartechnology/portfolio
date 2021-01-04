@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <div id="contact" className='my-4 bg-light animate__animated animate__fadeIn h-100 row align-items-center'>
 
-            <div id="contactContainer" className='container px-5 py-4 '>
+            <div id="contactContainer" className='container col-12 col-xs-12 col-md-10 col-lg-10 col-xl-8 px-5 py-4 '>
 
                 <div className='my-4 bg-white px-4 py-4 rounded border shadow'>
                     <h2>Contact</h2>

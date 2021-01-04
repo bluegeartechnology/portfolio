@@ -202,7 +202,7 @@ const Portfolio = () => {
                             </div>
                             <div className='mx-4'>
                                 <h3>PrepApp</h3>
-                                <small>App for tracking costs and timing for meal prep.</small>
+                                <small>App for tracking costs, amounts, and timing for meal prep.</small>
                                 <br />
                                 <br />
                                 <p>It's hard to figure out meal prep if you don't know how much food you use, or what it will cost.</p>
