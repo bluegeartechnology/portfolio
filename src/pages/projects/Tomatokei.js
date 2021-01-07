@@ -50,7 +50,7 @@ const Tomatokei = () => {
                     <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
                 </div>
 
-                <div className='container bg-dark rounded px-5 py-4 my-3'>
+                <div className='container col-11 col-sm-10 col-md-10 col-lg-8 col-xl-8 bg-dark rounded px-5 py-4 my-3'>
                     <h2>What is it?</h2>
                     <p>Tomatokei is a Pomodoro Clock and Time Management Tool. In particular, it exists to help manage ADHD symptoms and keep users on task.</p>
 

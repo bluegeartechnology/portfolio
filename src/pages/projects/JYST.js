@@ -50,11 +50,12 @@ const JYST = () => {
                     <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
                 </div>
 
-                <div className='container bg-dark rounded px-5 py-4 my-3'>
+                <div className='container col-11 col-sm-10 col-md-10 col-lg-8 col-xl-8 bg-dark rounded px-5 py-4 my-3'>
                     <h2>What is it?</h2>
                     <p>
                         JYST is a web-scraper specifically for scraping local junkyard websites.
                         It primarily exists to enable part-flipping businesses to more easily find parts which can then be sold online.
+                        It also contains tools for estimating profit margins of a trip to a given yard based on the cars found by the scrape.
                     </p>
 
                     <p>
