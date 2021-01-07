@@ -112,6 +112,8 @@ const Skills = () => {
 
                         <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="audition.png" alt="" />
 
+                        <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="flstudio.png" alt="" />
+
                     </div>
 
                     <button class="btn btn-danger my-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#certifications" aria-expanded="false" aria-controls="certifications">
