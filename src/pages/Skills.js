@@ -20,7 +20,7 @@ const Skills = () => {
 
 
 
-                    <button id='webdevSkillsButton' class="btn btn-primary my-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#webdevSkills" aria-expanded="false" aria-controls="webdevSkills">
+                    <button id='webdevSkillsButton' class="btn btn-primary my-4 w-100 " type="button" data-bs-toggle="collapse" data-bs-target="#webdevSkills" aria-expanded="false" aria-controls="webdevSkills">
                         <h3 className='text-center my-2'>Web Development Skills <i className="fa fa-arrow-down"></i></h3>
                     </button>
 
@@ -102,6 +102,7 @@ const Skills = () => {
                     </button>
 
                     <div id='digitalMediaSkills' className="collapse my-4 bg-light px-2 py-4 rounded border row justify-content-center ">
+
 
 
                         <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="photoshop.png" alt="" />
