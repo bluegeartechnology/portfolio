@@ -11,6 +11,7 @@ import Portfolio from './pages/Portfolio';
 import Tomatokei from './pages/projects/Tomatokei'
 import JYST from './pages/projects/JYST'
 import PortfolioSite from './pages/projects/PortfolioSite'
+import BarBella from './pages/projects/BarBella'
 
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
@@ -55,6 +56,7 @@ function App() {
           <Route path='/tomatokei' component={Tomatokei} />
           <Route path='/JYST' component={JYST} />
           <Route path='/PortfolioSite' component={PortfolioSite} />
+          <Route path='/BarBella' component={BarBella} />
 
           <Route path='/skills' component={Skills} />
           <Route path='/contact' component={Contact} />

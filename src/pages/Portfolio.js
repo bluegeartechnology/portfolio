@@ -221,7 +221,7 @@ const Portfolio = () => {
 
 
                     <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
-                        history.push('/tomatokei')
+                        history.push('/BarBella')
                     }}>
                         <div>
                             <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
