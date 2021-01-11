@@ -24,9 +24,39 @@ let setStandardOlympic = (e) => {
 let calculateWeights = (e) => {
     e.preventDefault();
 
+    let i = 0;
+    let availableWeights = []
 
-    let availableWeights = [45, 35, 25, 10, 5, 5, 2.5]
+    let fourtyFives = document.getElementById('45s').value / 2
+    while (i < fourtyFives) { availableWeights.push(45); i++ }
+    i = 0;
 
+    let thirtyFives = document.getElementById('35s').value / 2
+    while (i < thirtyFives) { availableWeights.push(35); i++ }
+    i = 0;
+
+    let twentyFives = document.getElementById('25s').value / 2
+    while (i < twentyFives) { availableWeights.push(25); i++ }
+    i = 0;
+
+    let tens = document.getElementById('10s').value / 2
+    while (i < tens) { availableWeights.push(10); i++ }
+    i = 0;
+
+    let fives = document.getElementById('5s').value / 2
+    while (i < fives) { availableWeights.push(5); i++ }
+    i = 0;
+
+    let twoPointFives = document.getElementById('2.5s').value / 2
+    while (i < twoPointFives) { availableWeights.push(2.5); i++ }
+    i = 0;
+
+
+    let quantities = [fourtyFives, thirtyFives, twentyFives, tens, fives, twoPointFives]
+
+
+    //    let availableWeights = [45, 35, 25, 10, 5, 5, 2.5]
+    console.log(availableWeights);
 
     //Double the weights, since weights work by being symmetrical.
     availableWeights = availableWeights.map(weight => weight * 2)
@@ -41,12 +71,25 @@ let calculateWeights = (e) => {
     availableWeights.map((weight, i) => {
         console.log(`${accWeight} + ${weight} = ${accWeight + weight}`);
 
-        if ((i == 0) && (desiredWeight % 5) != 0) {
-            alert(`Your desired weight must be a divisble by 5. Make sure the number ends in either a 5 or a 0.`)
-        }
+
+
+        if (i == 0 && !desiredWeight) { alert(`Please enter a desired weight. It must be an integer that's a multiple of five.`) }
+
+        if (i == 0 && desiredWeight < 45) { alert(`Your desired weight is less than 45 lbs. The bar itself weighs 45 lbs.`) }
+
+        if (i == 0 && desiredWeight == 45) { let finalWeights = "Just The Bar"; document.getElementById('finalWeights').innerHTML = `<h3>${finalWeights}</h3>` }
+
+        if ((i == 0) && (desiredWeight % 5) != 0) { alert(`Your desired weight must be an integer that's divisble by 5. Make sure the number ends in either a 5 or a 0.`) }
 
         if (i == availableWeights.length - 1 && (accWeight + weight) < desiredWeight) {
-            alert(`Your available weights (including the bar, which is 45 lbs) have a total weight of ${(availableWeights.reduce((a, b) => a + b)) + barWeight} lbs, which is less than your desired weight of ${desiredWeight} lbs. You will need more available weights to reach your desired weight.`);
+
+            if ((availableWeights.reduce((a, b) => a + b)) + barWeight < desiredWeight) {
+                alert(`Your available weights (including the bar, which is 45 lbs) have a total weight of ${(availableWeights.reduce((a, b) => a + b)) + barWeight} lbs, which is less than your desired weight of ${desiredWeight} lbs. You will need more available weights to reach your desired weight.`);
+            } else {
+                alert(`There is no combination of your available weights which will equal your desired weight.`)
+            }
+
+
         }
 
 
@@ -88,6 +131,7 @@ const BarBella = () => {
                     <br />
                     <p>Available Weights</p>
 
+
                     <div className="mx-auto d-flex row justify-content-center">
                         <div className=" d-flex col-4 col-lg-2">
                             <p className="my-auto col-4 col-lg-5">45s</p>
@@ -122,7 +166,7 @@ const BarBella = () => {
                     <br />
                     <div className="d-flex row justify-content-between">
                         <button className="btn btn-primary col-4 col-lg-2" onClick={(e) => calculateWeights(e)}>Calculate</button>
-                        <button className="btn btn-warning col-6 col-md-4" onClick={(e) => setStandardOlympic(e)}>Reset Weights to <br />Standard 300lb Olympic Barbell Set</button>
+                        <button className="btn btn-warning col-6 col-md-4" onClick={(e) => setStandardOlympic(e)}>Reset Available Weights to <br />Standard 300lb Olympic Barbell Set</button>
                     </div>
 
                     <div id="finalWeights" className='p-4 mx-auto col-10 text-center '></div>
