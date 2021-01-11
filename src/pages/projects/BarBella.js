@@ -25,7 +25,39 @@ let calculateWeights = (e) => {
     e.preventDefault();
 
 
+    let availableWeights = [45, 35, 25, 10, 5, 5, 2.5]
 
+
+    //Double the weights, since weights work by being symmetrical.
+    availableWeights = availableWeights.map(weight => weight * 2)
+
+
+    let barWeight = 45;
+    let desiredWeight = document.getElementById('desiredWeight').value;
+    let accWeight = barWeight;
+
+    let usedWeights = []
+
+    availableWeights.map((weight, i) => {
+        console.log(`${accWeight} + ${weight} = ${accWeight + weight}`);
+
+        if ((i == 0) && (desiredWeight % 5) != 0) {
+            alert(`Your desired weight must be a divisble by 5. Make sure the number ends in either a 5 or a 0.`)
+        }
+
+        if (i == availableWeights.length - 1 && (accWeight + weight) < desiredWeight) {
+            alert(`Your available weights (including the bar, which is 45 lbs) have a total weight of ${(availableWeights.reduce((a, b) => a + b)) + barWeight} lbs, which is less than your desired weight of ${desiredWeight} lbs. You will need more available weights to reach your desired weight.`);
+        }
+
+
+
+
+
+
+
+
+
+    })
 
 
 }
@@ -133,12 +165,10 @@ const BarBella = () => {
 
                 <div className='container col-11 col-sm-10 col-md-10 col-lg-8 col-xl-8 bg-dark rounded px-5 py-4 my-3'>
                     <h2>What is it?</h2>
-                    <p>Tomatokei is a Pomodoro Clock and Time Management Tool. In particular, it exists to help manage ADHD symptoms and keep users on task.</p>
+                    <p></p>
 
                     <h2>How does it work?</h2>
-                    <p>
-                        Tomatokei is built around the <a target='blank' href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a> and various ADHD coping strategies.
-                    </p>
+                    <p></p>
 
 
                     <h2>Technologies Used</h2>
@@ -194,24 +224,9 @@ const BarBella = () => {
 
                     <h2>What I learned</h2>
                     <p>
-                        This was my first truly full-stack application where everything really clicked and I knew what I was doing.
-                        As such, there was a lot of trial and error along the way, and it shows.
-                        I learned so much from this project that it's hard to think of any part that wouldn't be improved by a total rewrite.
-                        However, some of the biggest points are as follows:
-                    </p>
-                    <ul>
-                        <li>
-                            There were many, many revisions to the structure of the MongoDB database, because I initially didn't understand Mongoose, schemas, and other related concepts.
-                            I also hadn't fully conceptualized the strucutre of the system, and as such, wound up repeatedly refactoring the database's structure.
-                        </li>
-                        <li>
-                            Because this was the first time I'd attempted understanding and implementing an authentication system, it's built from scratch based on tutorials.
-                            There was little practical reason to do this other than learning, and I would definitely avoid reinventing the wheel in the future, and use something like Passport instead.
-                        </li>
-                        <li>
 
-                        </li>
-                    </ul>
+                    </p>
+
                 </div>
 
 
