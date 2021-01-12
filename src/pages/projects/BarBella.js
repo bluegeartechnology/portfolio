@@ -67,40 +67,84 @@ let calculateWeights = (e) => {
     let accWeight = barWeight;
 
     let usedWeights = []
+    let weightErrors = []
+
+    document.getElementById('finalWeights').innerHTML = ``
+    document.getElementById('errors').innerHTML = ``
 
     availableWeights.map((weight, i) => {
         console.log(`${accWeight} + ${weight} = ${accWeight + weight}`);
 
 
 
-        if (i == 0 && !desiredWeight) { alert(`Please enter a desired weight. It must be an integer that's a multiple of five.`) }
 
-        if (i == 0 && desiredWeight < 45) { alert(`Your desired weight is less than 45 lbs. The bar itself weighs 45 lbs.`) }
+
+        if (i == 0 && !desiredWeight) { weightErrors.push(`Please enter a desired weight. It must be an integer that's a multiple of five.`); console.log(weightErrors); }
+
+        if (i == 0 && desiredWeight < 45) { weightErrors.push(`Your desired weight is less than 45 lbs. The bar itself weighs 45 lbs.`) }
 
         if (i == 0 && desiredWeight == 45) { let finalWeights = "Just The Bar"; document.getElementById('finalWeights').innerHTML = `<h3>${finalWeights}</h3>` }
 
-        if ((i == 0) && (desiredWeight % 5) != 0) { alert(`Your desired weight must be an integer that's divisble by 5. Make sure the number ends in either a 5 or a 0.`) }
+        if ((i == 0) && (desiredWeight % 5) != 0) { weightErrors.push(`Your desired weight must be an integer that's divisble by 5. <br/> Make sure the number ends in either a 5 or a 0.`) }
 
         if (i == availableWeights.length - 1 && (accWeight + weight) < desiredWeight) {
 
             if ((availableWeights.reduce((a, b) => a + b)) + barWeight < desiredWeight) {
-                alert(`Your available weights (including the bar, which is 45 lbs) have a total weight of ${(availableWeights.reduce((a, b) => a + b)) + barWeight} lbs, which is less than your desired weight of ${desiredWeight} lbs. You will need more available weights to reach your desired weight.`);
+                weightErrors.push(`Your available weights (including the 45 lbs bar) have a total weight of ${(availableWeights.reduce((a, b) => a + b)) + barWeight} lbs. <br/>This is less than your desired weight of ${desiredWeight} lbs. <br/><br/> You will need more available weights to reach your desired weight.`);
             } else {
-                alert(`There is no combination of your available weights which will equal your desired weight.`)
+                weightErrors.push(`There is no combination of your available weights which will equal your desired weight.`)
             }
 
 
         }
 
 
+        document.getElementById('errors').innerHTML = weightErrors.map((weightError) => `<h6 class='bg-danger m-2 p-2 rounded' >${weightError}</h6>`).join('')
 
 
+
+
+        if ((accWeight + weight) > desiredWeight) {
+
+            console.log(`Adding ${weight} would exceed the desired weight of ${desiredWeight}. Discarding.`);
+
+        } else if (accWeight + weight < desiredWeight) {
+
+            console.log(`Adding ${weight} would still leave room until ${desiredWeight}. Using it and adding to the used weights array.`);
+            accWeight += weight;
+            usedWeights.push(weight)
+
+        } else if ((accWeight + weight) == desiredWeight) {
+            accWeight += weight;
+            console.log(`Adding ${accWeight} to ${weight} brings us to our desired weight of ${desiredWeight}! Using it and adding to the used weights array.`);
+            usedWeights.push(weight)
+            console.log(`Final array of used weights: ${usedWeights}`);
+
+            console.log(`Dividing and symmetrizing.`);
+            usedWeights = usedWeights.map(weight => weight / 2)
+
+            //usedWeights = usedWeights.push(usedWeights.reverse())
+            console.log(usedWeights);
+
+            let finalWeights = [...usedWeights.reverse(), "Bar", ...usedWeights.reverse()]
+            console.log(finalWeights);
+
+            document.getElementById('finalWeights').innerHTML = `<h3>${finalWeights}</h3>`
+
+
+
+
+        } else {
+            console.log('Something went wrong. No criteria met.');
+        }
 
 
 
 
 
     })
+
+
 
 
 }
@@ -170,6 +214,7 @@ const BarBella = () => {
                     </div>
 
                     <div id="finalWeights" className='p-4 mx-auto col-10 text-center '></div>
+                    <div id="errors" className='p-4 mx-auto col-10 text-center '></div>
                 </form>
 
 
