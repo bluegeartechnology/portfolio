@@ -72,6 +72,8 @@ let calculateWeights = (e) => {
     document.getElementById('finalWeights').innerHTML = ``
     document.getElementById('errors').innerHTML = ``
 
+
+
     availableWeights.map((weight, i) => {
         console.log(`${accWeight} + ${weight} = ${accWeight + weight}`);
 
@@ -90,7 +92,7 @@ let calculateWeights = (e) => {
         if (i == availableWeights.length - 1 && (accWeight + weight) < desiredWeight) {
 
             if ((availableWeights.reduce((a, b) => a + b)) + barWeight < desiredWeight) {
-                weightErrors.push(`Your available weights (including the 45 lbs bar) have a total weight of ${(availableWeights.reduce((a, b) => a + b)) + barWeight} lbs. <br/>This is less than your desired weight of ${desiredWeight} lbs. <br/><br/> You will need more available weights to reach your desired weight.`);
+                weightErrors.push(`Your available weights (including the 45 lbs bar) have a total weight of ${(availableWeights.reduce((a, b) => a + b)) + barWeight} lbs. <br/>This is less than your desired weight of ${desiredWeight} lbs. <br/>You will need more available weights to reach your desired weight.`);
             } else {
                 weightErrors.push(`There is no combination of your available weights which will equal your desired weight.`)
             }
@@ -104,39 +106,7 @@ let calculateWeights = (e) => {
 
 
 
-        if ((accWeight + weight) > desiredWeight) {
 
-            console.log(`Adding ${weight} would exceed the desired weight of ${desiredWeight}. Discarding.`);
-
-        } else if (accWeight + weight < desiredWeight) {
-
-            console.log(`Adding ${weight} would still leave room until ${desiredWeight}. Using it and adding to the used weights array.`);
-            accWeight += weight;
-            usedWeights.push(weight)
-
-        } else if ((accWeight + weight) == desiredWeight) {
-            accWeight += weight;
-            console.log(`Adding ${accWeight} to ${weight} brings us to our desired weight of ${desiredWeight}! Using it and adding to the used weights array.`);
-            usedWeights.push(weight)
-            console.log(`Final array of used weights: ${usedWeights}`);
-
-            console.log(`Dividing and symmetrizing.`);
-            usedWeights = usedWeights.map(weight => weight / 2)
-
-            //usedWeights = usedWeights.push(usedWeights.reverse())
-            console.log(usedWeights);
-
-            let finalWeights = [...usedWeights.reverse(), "Bar", ...usedWeights.reverse()]
-            console.log(finalWeights);
-
-            document.getElementById('finalWeights').innerHTML = `<h3>${finalWeights}</h3>`
-
-
-
-
-        } else {
-            console.log('Something went wrong. No criteria met.');
-        }
 
 
 
@@ -215,6 +185,26 @@ const BarBella = () => {
 
                     <div id="finalWeights" className='p-4 mx-auto col-10 text-center '></div>
                     <div id="errors" className='p-4 mx-auto col-10 text-center '></div>
+
+                    <div className="row mx-5">
+                        <div id="thirtyFive" className=' px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>
+                        <div id="thirtyFive" className=' px-0 my-4 border rounded col text-center bg-info'>5</div>
+                        <div id="thirtyFive" className=' px-0 my-3 border rounded col text-center bg-primary'>10</div>
+                        <div id="thirtyFive" className=' px-0 my-2 border rounded col text-center bg-success'>25</div>
+                        <div id="fourtyFive" className=' px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>
+                        <div id="thirtyFive" className=' px-0 my-0 border rounded col text-center bg-danger'>45</div>
+                        <div id="thirtyFive" className=' px-0 my-0 border rounded col text-center bg-danger'> <div className="my-5">45</div></div>
+                        <div id="bar" className='border bg-dark p-2 my-5 col-4'><div className="text-center">45</div></div>
+                        <div id="fourtyFive" className=' px-1 my-0 border rounded col text-center bg-danger'>45</div>
+                        <div id="thirtyFive" className=' px-1 my-0 border rounded col text-center bg-danger'>45</div>
+                        <div id="thirtyFive" className=' px-1 my-1 border rounded col text-center bg-warning text-dark'>35</div>
+                        <div id="thirtyFive" className=' px-1 my-2 border rounded col text-center bg-success'>25</div>
+                        <div id="thirtyFive" className=' px-1 my-3 border rounded col text-center bg-primary'>10</div>
+                        <div id="thirtyFive" className=' px-1 my-4 border rounded col text-center bg-info'>5</div>
+                        <div id="thirtyFive" className=' px-1 my-5 border rounded col text-center bg-light text-dark'>2.5</div>
+
+                    </div>
+
                 </form>
 
 
