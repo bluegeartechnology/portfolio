@@ -105,7 +105,39 @@ let calculateWeights = (e) => {
 
 
 
+        if ((accWeight + weight) > desiredWeight) {
 
+            console.log(`Adding ${weight} would exceed the desired weight of ${desiredWeight}. Discarding.`);
+
+        } else if (accWeight + weight < desiredWeight) {
+
+            console.log(`Adding ${weight} would still leave room until ${desiredWeight}. Using it and adding to the used weights array.`);
+            accWeight += weight;
+            usedWeights.push(weight)
+
+        } else if ((accWeight + weight) == desiredWeight) {
+            accWeight += weight;
+            console.log(`Adding ${accWeight} to ${weight} brings us to our desired weight of ${desiredWeight}! Using it and adding to the used weights array.`);
+            usedWeights.push(weight)
+            console.log(`Final array of used weights: ${usedWeights}`);
+
+            console.log(`Dividing and symmetrizing.`);
+            usedWeights = usedWeights.map(weight => weight / 2)
+
+            //usedWeights = usedWeights.push(usedWeights.reverse())
+            console.log(usedWeights);
+
+            let finalWeights = [...usedWeights.reverse(), "Bar", ...usedWeights.reverse()]
+            console.log(finalWeights);
+
+            document.getElementById('finalWeights').innerHTML = `<h3>${finalWeights}</h3>`
+
+
+
+
+        } else {
+            console.log('Something went wrong. No criteria met.');
+        }
 
 
 
@@ -137,7 +169,7 @@ const BarBella = () => {
                 <h2 className='text-center col-9 mx-auto'>BarBella</h2>
 
 
-                <form className='form-group col-8 bg-secondary rounded p-4 m-4 mx-auto' action="">
+                <form className='form-group col-12 col-sm-12 col-md-8 col-lg-8 bg-secondary rounded p-4 m-4 mx-auto' action="">
 
                     <p>Desired Weight</p>
                     <input className='form-control col-2' type="number" name="desiredWeight" id="desiredWeight" step="5" placeholder='0' />
@@ -186,22 +218,22 @@ const BarBella = () => {
                     <div id="finalWeights" className='p-4 mx-auto col-10 text-center '></div>
                     <div id="errors" className='p-4 mx-auto col-10 text-center '></div>
 
-                    <div className="row mx-5">
+                    <div className="row mx-auto mw-100">
                         <div id="thirtyFive" className=' px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>
                         <div id="thirtyFive" className=' px-0 my-4 border rounded col text-center bg-info'>5</div>
                         <div id="thirtyFive" className=' px-0 my-3 border rounded col text-center bg-primary'>10</div>
                         <div id="thirtyFive" className=' px-0 my-2 border rounded col text-center bg-success'>25</div>
                         <div id="fourtyFive" className=' px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>
                         <div id="thirtyFive" className=' px-0 my-0 border rounded col text-center bg-danger'>45</div>
-                        <div id="thirtyFive" className=' px-0 my-0 border rounded col text-center bg-danger'> <div className="my-5">45</div></div>
-                        <div id="bar" className='border bg-dark p-2 my-5 col-4'><div className="text-center">45</div></div>
-                        <div id="fourtyFive" className=' px-1 my-0 border rounded col text-center bg-danger'>45</div>
-                        <div id="thirtyFive" className=' px-1 my-0 border rounded col text-center bg-danger'>45</div>
-                        <div id="thirtyFive" className=' px-1 my-1 border rounded col text-center bg-warning text-dark'>35</div>
-                        <div id="thirtyFive" className=' px-1 my-2 border rounded col text-center bg-success'>25</div>
-                        <div id="thirtyFive" className=' px-1 my-3 border rounded col text-center bg-primary'>10</div>
-                        <div id="thirtyFive" className=' px-1 my-4 border rounded col text-center bg-info'>5</div>
-                        <div id="thirtyFive" className=' px-1 my-5 border rounded col text-center bg-light text-dark'>2.5</div>
+                        <div id="thirtyFive" className=' px-0 my-0 border rounded col text-center bg-danger'> 45</div>
+                        <div id="bar" className='border bg-dark p-0 my-5 col-1 col-sm-4 col-md-4 col-lg-6'><div className="text-center">45</div></div>
+                        <div id="fourtyFive" className=' px-0 my-0 border rounded col text-center bg-danger'>45</div>
+                        <div id="thirtyFive" className=' px-0 my-0 border rounded col text-center bg-danger'>45</div>
+                        <div id="thirtyFive" className=' px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>
+                        <div id="thirtyFive" className=' px-0 my-2 border rounded col text-center bg-success'>25</div>
+                        <div id="thirtyFive" className=' px-0 my-3 border rounded col text-center bg-primary'>10</div>
+                        <div id="thirtyFive" className=' px-0 my-4 border rounded col text-center bg-info'>5</div>
+                        <div id="thirtyFive" className=' px-0 my-5 border rounded col text-center bg-light text-dark'>2.5</div>
 
                     </div>
 
