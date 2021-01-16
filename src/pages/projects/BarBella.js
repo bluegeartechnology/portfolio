@@ -10,6 +10,18 @@ function useHistory() {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 let setStandardOlympic = (e) => {
     e.preventDefault();
     document.getElementById('45s').value = 2;
@@ -163,6 +175,45 @@ const BarBella = () => {
 
     useHistory();
 
+
+
+    useEffect(() => {
+
+
+        Array.from(document.getElementsByClassName('weight-left')).map((weight, i) => {
+            weight.style.visibility = "hidden";
+
+            setTimeout(() => {
+                weight.classList.add('animate__animated', 'animate__fadeInLeftBig')
+                weight.style.visibility = "visible";
+            }
+                , 1000 - (100 * i))
+
+
+
+        })
+
+
+
+
+        Array.from(document.getElementsByClassName('weight-right')).map((weight, i) => {
+            weight.style.visibility = "hidden";
+
+            setTimeout(() => {
+                weight.classList.add('animate__animated', 'animate__fadeInRightBig')
+                weight.style.visibility = "visible";
+            }
+                , 250 + (100 * i))
+
+
+        })
+
+
+
+    }, [])
+
+
+
     return (
         <div id="portfolio" className='py-5 my-4  text-light'>
             <div className="animate__animated animate__fadeIn">
@@ -219,21 +270,21 @@ const BarBella = () => {
                     <div id="errors" className='p-4 mx-auto col-10 text-center '></div>
 
                     <div className="row mx-auto mw-100">
-                        <div id="thirtyFive" className=' px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>
-                        <div id="thirtyFive" className=' px-0 my-4 border rounded col text-center bg-info'>5</div>
-                        <div id="thirtyFive" className=' px-0 my-3 border rounded col text-center bg-primary'>10</div>
-                        <div id="thirtyFive" className=' px-0 my-2 border rounded col text-center bg-success'>25</div>
-                        <div id="fourtyFive" className=' px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>
-                        <div id="thirtyFive" className=' px-0 my-0 border rounded col text-center bg-danger'>45</div>
-                        <div id="thirtyFive" className=' px-0 my-0 border rounded col text-center bg-danger'> 45</div>
-                        <div id="bar" className='border bg-dark p-0 my-5 col-1 col-sm-4 col-md-4 col-lg-6'><div className="text-center">45</div></div>
-                        <div id="fourtyFive" className=' px-0 my-0 border rounded col text-center bg-danger'>45</div>
-                        <div id="thirtyFive" className=' px-0 my-0 border rounded col text-center bg-danger'>45</div>
-                        <div id="thirtyFive" className=' px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>
-                        <div id="thirtyFive" className=' px-0 my-2 border rounded col text-center bg-success'>25</div>
-                        <div id="thirtyFive" className=' px-0 my-3 border rounded col text-center bg-primary'>10</div>
-                        <div id="thirtyFive" className=' px-0 my-4 border rounded col text-center bg-info'>5</div>
-                        <div id="thirtyFive" className=' px-0 my-5 border rounded col text-center bg-light text-dark'>2.5</div>
+                        <div id="thirtyFive" className='weight-left btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>
+                        <div id="thirtyFive" className='weight-left btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>
+                        <div id="thirtyFive" className='weight-left btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>
+                        <div id="thirtyFive" className='weight-left btn text-light px-0 my-2 border rounded col text-center bg-success'>25</div>
+                        <div id="fourtyFive" className='weight-left btn text-light px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>
+                        <div id="thirtyFive" className='weight-left btn text-light px-0 my-0 border rounded col text-center bg-danger'>45</div>
+                        <div id="thirtyFive" className='weight-left btn text-light px-0 my-0 border rounded col text-center bg-danger'> 45</div>
+                        <div id="bar" className=' border btn text-light bg-dark p-0 my-5 col-1 col-sm-4 col-md-4 col-lg-6'><div className="text-center">45</div></div>
+                        <div id="fourtyFive" className='weight-right btn text-light px-0 my-0 border rounded col text-center bg-danger'>45</div>
+                        <div id="thirtyFive" className='weight-right btn text-light px-0 my-0 border rounded col text-center bg-danger'>45</div>
+                        <div id="thirtyFive" className='weight-right btn text-light px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>
+                        <div id="thirtyFive" className='weight-right btn text-light px-0 my-2 border rounded col text-center bg-success'>25</div>
+                        <div id="thirtyFive" className='weight-right btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>
+                        <div id="thirtyFive" className='weight-right btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>
+                        <div id="thirtyFive" className='weight-right btn text-light px-0 my-5 border rounded col text-center bg-light text-dark'>2.5</div>
 
                     </div>
 
