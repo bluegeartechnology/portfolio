@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 
 function useHistory() {
     useEffect(() => {
-        window.scrollTo(0, 0)
+        // window.scrollTo(0, 0)
         // document.getElementById('imageAndEmbed').innerHTML = `<img width='100%' src="\/tomatokei.png" alt="" className='rounded my-auto' />`
     }, []);
 }
@@ -327,10 +327,14 @@ const BarBella = () => {
 
                 <div className='container col-11 col-sm-10 col-md-10 col-lg-8 col-xl-8 bg-dark rounded px-5 py-4 my-3'>
                     <h2>What is it?</h2>
-                    <p></p>
+                    <p>
+                        BarBella is an app that calculates the weights that you need to put on a barbell to reach a desired weight, based on which weights you have available.
+                    </p>
 
                     <h2>How does it work?</h2>
-                    <p></p>
+                    <p>
+
+                    </p>
 
 
                     <h2>Technologies Used</h2>
@@ -356,22 +360,6 @@ const BarBella = () => {
                         <div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
                             <img className='skillIcon col-12' src="react.png" alt="" />
                             <h3 className='text-center'>ReactJS</h3>
-                        </div>
-
-                        <div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'>
-                            <img className='skillIcon col-12' src="redux.png" alt="" />
-                            <h3 className='text-center'>Redux</h3>
-                        </div>
-
-                        <div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'>
-                            <img className='skillIcon col-12' src="mongodb.png" alt="" />
-                            <h3 className='text-center'>mongoDB</h3>
-                        </div>
-
-
-                        <div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="node.svg" alt="" />
-                            <h3 className='text-center'>Node.js</h3>
                         </div>
 
                         <div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
