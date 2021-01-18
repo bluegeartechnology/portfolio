@@ -315,7 +315,7 @@ const BarBella = () => {
                             </button>
 
                     <button className='btn btn-danger mx-1 my-1' onClick={() => {
-                        //window.scrollTo(document.getElementById('imageAndEmbed').getBoundingClientRect().x, document.getElementById('imageAndEmbed').getBoundingClientRect().y)
+                        window.scrollTo(0, document.getElementById('imageAndEmbed').getBoundingClientRect().top + window.pageYOffset - 80)
                         document.getElementById('imageAndEmbed').innerHTML = `<iframe id='embeddedApp' width="784" height="441" src="https://www.youtube.com/embed/03yBSzj7vKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
                     }}>
