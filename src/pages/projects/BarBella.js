@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 
 function useHistory() {
     useEffect(() => {
-        // window.scrollTo(0, 0)
+        //window.scrollTo(0, 0)
         // document.getElementById('imageAndEmbed').innerHTML = `<img width='100%' src="\/tomatokei.png" alt="" className='rounded my-auto' />`
     }, []);
 }
@@ -270,21 +270,21 @@ const BarBella = () => {
                     <div id="errors" className='p-4 mx-auto col-10 text-center '></div>
 
                     <div className="row mx-auto mw-100">
-                        <div id="thirtyFive" className='weight-left btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>
-                        <div id="thirtyFive" className='weight-left btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>
-                        <div id="thirtyFive" className='weight-left btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>
-                        <div id="thirtyFive" className='weight-left btn text-light px-0 my-2 border rounded col text-center bg-success'>25</div>
-                        <div id="fourtyFive" className='weight-left btn text-light px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>
-                        <div id="thirtyFive" className='weight-left btn text-light px-0 my-0 border rounded col text-center bg-danger'>45</div>
-                        <div id="thirtyFive" className='weight-left btn text-light px-0 my-0 border rounded col text-center bg-danger'> 45</div>
-                        <div id="bar" className=' border btn text-light bg-dark p-0 my-5 col-1 col-sm-4 col-md-4 col-lg-6'><div className="text-center">45</div></div>
-                        <div id="fourtyFive" className='weight-right btn text-light px-0 my-0 border rounded col text-center bg-danger'>45</div>
-                        <div id="thirtyFive" className='weight-right btn text-light px-0 my-0 border rounded col text-center bg-danger'>45</div>
-                        <div id="thirtyFive" className='weight-right btn text-light px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>
-                        <div id="thirtyFive" className='weight-right btn text-light px-0 my-2 border rounded col text-center bg-success'>25</div>
-                        <div id="thirtyFive" className='weight-right btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>
-                        <div id="thirtyFive" className='weight-right btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>
-                        <div id="thirtyFive" className='weight-right btn text-light px-0 my-5 border rounded col text-center bg-light text-dark'>2.5</div>
+                        <div id="" className='twoPointFive weight-left btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>
+                        <div id="" className='five weight-left btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>
+                        <div id="" className='ten weight-left btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>
+                        <div id="" className='twentyFive weight-left btn text-light px-0 my-2 border rounded col text-center bg-success'>25</div>
+                        <div id="" className='thirtyFive weight-left btn text-light px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>
+                        <div id="" className='fourtyFive weight-left btn text-light px-0 my-0 border rounded col text-center bg-danger'>45</div>
+                        <div id="" className='fourtyFive weight-left btn text-light px-0 my-0 border rounded col text-center bg-danger'> 45</div>
+                        <div id="" className='bar border btn text-light bg-dark p-0 my-5 col-1 col-sm-4 col-md-4 col-lg-6'><div className="text-center">45</div></div>
+                        <div id="" className='fourtyFive weight-right btn text-light px-0 my-0 border rounded col text-center bg-danger'>45</div>
+                        <div id="" className='fourtyFive weight-right btn text-light px-0 my-0 border rounded col text-center bg-danger'>45</div>
+                        <div id="" className='thirtyFive weight-right btn text-light px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>
+                        <div id="" className='twentyFive weight-right btn text-light px-0 my-2 border rounded col text-center bg-success'>25</div>
+                        <div id="" className='ten weight-right btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>
+                        <div id="" className='five weight-right btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>
+                        <div id="" className='twoPointFive weight-right btn text-light px-0 my-5 border rounded col text-center bg-light text-dark'>2.5</div>
 
                     </div>
 
@@ -315,6 +315,7 @@ const BarBella = () => {
                             </button>
 
                     <button className='btn btn-danger mx-1 my-1' onClick={() => {
+                        //window.scrollTo(document.getElementById('imageAndEmbed').getBoundingClientRect().x, document.getElementById('imageAndEmbed').getBoundingClientRect().y)
                         document.getElementById('imageAndEmbed').innerHTML = `<iframe id='embeddedApp' width="784" height="441" src="https://www.youtube.com/embed/03yBSzj7vKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
                     }}>
