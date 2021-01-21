@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 
 function useHistory() {
     useEffect(() => {
-        //window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
         // document.getElementById('imageAndEmbed').innerHTML = `<img width='100%' src="\/tomatokei.png" alt="" className='rounded my-auto' />`
     }, []);
 }
