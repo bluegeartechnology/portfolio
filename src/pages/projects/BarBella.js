@@ -329,13 +329,29 @@ const BarBella = () => {
                 <div className='container col-11 col-sm-10 col-md-10 col-lg-8 col-xl-8 bg-dark rounded px-5 py-4 my-3'>
                     <h2>What is it?</h2>
                     <p>
-                        BarBella is an app that calculates the weights that you need to put on a barbell to reach a desired weight, based on which weights you have available.
+                        BarBella is an app that makes two different calculations for weightlifting with a barbell. It can find:
                     </p>
+
+                    <ol>
+                        <li>The most efficient set of weights to put on a barbell to reach a desired weight, based on which weights you have available.</li>
+                        <li>How much weight is currently on a bar, based on which plates are present.</li>
+                    </ol>
+
+                    <p>
+                        For myself at least, this is a major time saver.
+                    </p>
+
 
                     <h2>How does it work?</h2>
-                    <p>
+                    <p>At its core, BarBella is relatively simple.</p>
 
-                    </p>
+                    <p>The user tells it which plates they have available, and the combined weight of each symmetical pair of plates is added to an array. (The default values are those of a standard olympic barbell set.)</p>
+
+                    <p>Then, it checks (in descending order) to see if the combined weights of each new pair, plus the weight of the bar and all other used weights, are more, less, or equal to the desired weight.</p>
+
+                    <p>If it's too much, it doesn't use the pair. If it's not enough, it adds the weight of the pair to the whole. If it's reached the desired weight exactly, it has succeeded.</p>
+
+                    <p>Of course, if there's no combination of plates in the given set which will achieve the desired weight, it will say as much.</p>
 
 
                     <h2>Technologies Used</h2>
