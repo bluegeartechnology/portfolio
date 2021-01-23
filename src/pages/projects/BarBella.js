@@ -343,15 +343,20 @@ const BarBella = () => {
 
 
                     <h2>How does it work?</h2>
-                    <p>At its core, BarBella is relatively simple.</p>
+                    <p>BarBella's calculations are relatively simple, but not immediately apparent.</p>
 
-                    <p>The user tells it which plates they have available, and the combined weight of each symmetical pair of plates is added to an array. (The default values are those of a standard olympic barbell set.)</p>
+                    <h5>Desired Weight Calculation</h5>
+                    <p>In the case that the user does not know which weights need to go onto the bar, the user tells it which plates they have available. The combined weight of each symmetical pair of available plates is added to an array. (The default values are those of a standard olympic barbell set.)</p>
 
                     <p>Then, it checks (in descending order) to see if the combined weights of each new pair, plus the weight of the bar and all other used weights, are more, less, or equal to the desired weight.</p>
 
                     <p>If it's too much, it doesn't use the pair. If it's not enough, it adds the weight of the pair to the whole. If it's reached the desired weight exactly, it has succeeded.</p>
 
-                    <p>Of course, if there's no combination of plates in the given set which will achieve the desired weight, it will say as much.</p>
+                    <p>Of course, it also checks for edge cases which arise from this methodology. if there's no combination of plates in the given set which will achieve the desired weight, it will say as much.</p>
+
+                    <h5>Existing Weight Calculation</h5>
+                    <p>In the case that the bar already an unknown amount of weight on it, the user inputs which weights are on the bar by tapping the appropriate weight icons. This is generally much faster than using a calculator every time.</p>
+
 
 
                     <h2>Technologies Used</h2>
