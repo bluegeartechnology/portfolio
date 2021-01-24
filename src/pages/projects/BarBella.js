@@ -187,7 +187,7 @@ const BarBella = () => {
                 weight.classList.add('animate__animated', 'animate__fadeInLeftBig')
                 weight.style.visibility = "visible";
             }
-                , 1000 - (100 * i))
+                , (Array.from(document.getElementsByClassName('weight-left')).length + 1) * 100 - (100 * i))
 
 
 
