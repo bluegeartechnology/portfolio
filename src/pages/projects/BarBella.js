@@ -300,19 +300,6 @@ const BarBella = () => {
                 </div>
 
                 <div className="d-flex justify-content-center d-flex p-2">
-                    <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit On Heroku</button></a>
-
-                    <button className="btn btn-success mx-1 my-1" onClick={
-                        () => {
-                            document.getElementById('imageAndEmbed').innerHTML = `<iframe id='embeddedApp' className='mx-auto' src="https://tomatokei.herokuapp.com" frameborder="1"></iframe>`
-                            document.getElementById('embeddedApp').width = window.innerWidth
-                            document.getElementById('embeddedApp').height = window.innerHeight
-                        }
-
-                    }>
-                        <i className="fa fa-arrow-down"></i>
-                            &nbsp;Embed Here
-                            </button>
 
                     <button className='btn btn-danger mx-1 my-1' onClick={() => {
                         window.scrollTo(0, document.getElementById('imageAndEmbed').getBoundingClientRect().top + window.pageYOffset - 80)
@@ -323,7 +310,6 @@ const BarBella = () => {
                             &nbsp;Watch Video
                     </button>
 
-                    <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
                 </div>
 
                 <div className='container col-11 col-sm-10 col-md-10 col-lg-8 col-xl-8 bg-dark rounded px-5 py-4 my-3'>
