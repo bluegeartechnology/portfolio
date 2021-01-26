@@ -140,9 +140,74 @@ let calculateWeights = (e) => {
             console.log(usedWeights);
 
             let finalWeights = [...usedWeights.reverse(), "Bar", ...usedWeights.reverse()]
-            console.log(finalWeights);
+            let finalWeightsVisual = []
 
-            document.getElementById('finalWeights').innerHTML = `<h3>${finalWeights}</h3>`
+            finalWeightsVisual = [
+                usedWeights.reverse().map((weight) => {
+                    if (weight == 45) { return `<div id="" class='fourtyFive weight-left btn text-light px-0 my-0 border rounded col text-center bg-danger'> 45</div>` }
+                    if (weight == 35) { return `<div id="" class='thirtyFive weight-left btn text-light px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>` }
+                    if (weight == 25) { return `<div id="" class='twentyFive weight-left btn text-light px-0 my-2 border rounded col text-center bg-success'>25</div>` }
+                    if (weight == 10) { return `<div id="" class='ten weight-left btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>` }
+                    if (weight == 5) { return `<div id="" class='five weight-left btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>` }
+                    if (weight == 2.5) { return `<div id="" class='twoPointFive weight-left btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>` }
+                }),
+
+                `<div id="" class='bar border btn text-light bg-dark p-0 my-5 col-1 col-sm-4 col-md-4 col-lg-6'><div className="text-center">45</div></div>`,
+
+                usedWeights.reverse().map((weight) => {
+                    if (weight == 45) { return `<div id="" class='fourtyFive weight-left btn text-light px-0 my-0 border rounded col text-center bg-danger'> 45</div>` }
+                    if (weight == 35) { return `<div id="" class='thirtyFive weight-left btn text-light px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>` }
+                    if (weight == 25) { return `<div id="" class='twentyFive weight-left btn text-light px-0 my-2 border rounded col text-center bg-success'>25</div>` }
+                    if (weight == 10) { return `<div id="" class='ten weight-left btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>` }
+                    if (weight == 5) { return `<div id="" class='five weight-left btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>` }
+                    if (weight == 2.5) { return `<div id="" class='twoPointFive weight-left btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>` }
+                })
+            ].toString().replace(/,/g, '')
+
+
+
+            console.log(finalWeights);
+            console.log(finalWeightsVisual);
+
+
+
+            // document.getElementById('finalWeights').innerHTML = `<h3>${finalWeights}</h3>`
+            document.getElementById('finalWeightsVisual').innerHTML = `${finalWeightsVisual}`
+
+
+
+
+
+            Array.from(document.getElementsByClassName('weight-left')).map((weight, i) => {
+                weight.style.visibility = "hidden";
+
+                setTimeout(() => {
+                    weight.classList.add('animate__animated', 'animate__fadeInLeftBig')
+                    weight.style.visibility = "visible";
+                }
+                    , (Array.from(document.getElementsByClassName('weight-left')).length + 1) * 100 - (100 * i))
+
+
+
+            })
+
+
+
+
+            Array.from(document.getElementsByClassName('weight-right')).map((weight, i) => {
+                weight.style.visibility = "hidden";
+
+                setTimeout(() => {
+                    weight.classList.add('animate__animated', 'animate__fadeInRightBig')
+                    weight.style.visibility = "visible";
+                }
+                    , 250 + (100 * i))
+
+
+            })
+
+
+
 
 
 
@@ -210,6 +275,8 @@ const BarBella = () => {
 
 
 
+
+
     }, [])
 
 
@@ -269,7 +336,7 @@ const BarBella = () => {
                     <div id="finalWeights" className='p-4 mx-auto col-10 text-center '></div>
                     <div id="errors" className='p-4 mx-auto col-10 text-center '></div>
 
-                    <div className="row mx-auto mw-100">
+                    <div id='finalWeightsVisual' className="row mx-auto mw-100">
                         <div id="" className='twoPointFive weight-left btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>
                         <div id="" className='five weight-left btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>
                         <div id="" className='ten weight-left btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>
