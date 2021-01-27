@@ -155,12 +155,12 @@ let calculateWeights = (e) => {
                 `<div id="" class='bar border btn text-light bg-dark p-0 my-5 col-1 col-sm-4 col-md-4 col-lg-6'><div className="text-center">45</div></div>`,
 
                 usedWeights.reverse().map((weight) => {
-                    if (weight == 45) { return `<div id="" class='fourtyFive weight-left btn text-light px-0 my-0 border rounded col text-center bg-danger'> 45</div>` }
-                    if (weight == 35) { return `<div id="" class='thirtyFive weight-left btn text-light px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>` }
-                    if (weight == 25) { return `<div id="" class='twentyFive weight-left btn text-light px-0 my-2 border rounded col text-center bg-success'>25</div>` }
-                    if (weight == 10) { return `<div id="" class='ten weight-left btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>` }
-                    if (weight == 5) { return `<div id="" class='five weight-left btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>` }
-                    if (weight == 2.5) { return `<div id="" class='twoPointFive weight-left btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>` }
+                    if (weight == 45) { return `<div id="" class='fourtyFive weight-right btn text-light px-0 my-0 border rounded col text-center bg-danger'> 45</div>` }
+                    if (weight == 35) { return `<div id="" class='thirtyFive weight-right btn text-light px-0 my-1 border rounded col text-center bg-warning text-dark'>35</div>` }
+                    if (weight == 25) { return `<div id="" class='twentyFive weight-right btn text-light px-0 my-2 border rounded col text-center bg-success'>25</div>` }
+                    if (weight == 10) { return `<div id="" class='ten weight-right btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>` }
+                    if (weight == 5) { return `<div id="" class='five weight-right btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>` }
+                    if (weight == 2.5) { return `<div id="" class='twoPointFive weight-right btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>` }
                 })
             ].toString().replace(/,/g, '')
 
