@@ -69,6 +69,19 @@ const Portfolio = () => {
                         header={`A Pomodoro Clock and Time Management Tool`}
                         desc1={`Designed to help manage ADHD symptoms and stay on task.`}
                         desc2={`Integrated with Google Calendar for optimal ease of use.`}
+                        link={`https://tomatokei.herokuapp.com`}
+                        projectPage={`tomatokei`}
+                        github={``}
+                    />
+
+                    <ProjectCard
+                        projectName={`JYST`}
+                        header={`A Pomodoro Clock and Time Management Tool`}
+                        desc1={`Designed to help manage ADHD symptoms and stay on task.`}
+                        desc2={`Integrated with Google Calendar for optimal ease of use.`}
+                        link={`https://tomatokei.herokuapp.com`}
+                        projectPage={`tomatokei`}
+                        github={``}
                     />
 
                     <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
