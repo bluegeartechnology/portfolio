@@ -235,7 +235,7 @@ let calculateWeights = (e) => {
 
 
 
-const BarBella = () => {
+const BarBelle = () => {
 
 
     useHistory();
@@ -284,7 +284,7 @@ const BarBella = () => {
     return (
         <div id="portfolio" className='py-5 my-4  text-light'>
             <div className="animate__animated animate__fadeIn">
-                <h2 className='text-center col-9 mx-auto'>BarBella</h2>
+                <h2 className='text-center col-9 mx-auto'>BarBelle</h2>
 
 
                 <form className='form-group col-12 col-sm-12 col-md-8 col-lg-8 bg-secondary rounded p-4 m-4 mx-auto' action="">
@@ -382,7 +382,7 @@ const BarBella = () => {
                 <div className='container col-11 col-sm-10 col-md-10 col-lg-8 col-xl-8 bg-dark rounded px-5 py-4 my-3'>
                     <h2>What is it?</h2>
                     <p>
-                        BarBella is an app that makes two different calculations for weightlifting with a barbell. It can find:
+                        BarBelle is an app that makes two different calculations for weightlifting with a barbell. It can find:
                     </p>
 
                     <ol>
@@ -396,7 +396,7 @@ const BarBella = () => {
 
 
                     <h2>How does it work?</h2>
-                    <p>BarBella's calculations are relatively simple, but not immediately apparent.</p>
+                    <p>BarBelle's calculations are relatively simple, but not immediately apparent.</p>
 
                     <h5>Desired Weight Calculation</h5>
                     <p>In the case that the user does not know which weights need to go onto the bar, the user tells it which plates they have available. The combined weight of each symmetical pair of available plates is added to an array. (The default values are those of a standard olympic barbell set.)</p>
@@ -460,4 +460,4 @@ const BarBella = () => {
     )
 }
 
-export default BarBella
+export default BarBelle

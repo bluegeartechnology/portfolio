@@ -56,7 +56,7 @@ function App() {
           <Route path='/tomatokei' component={Tomatokei} />
           <Route path='/JYST' component={JYST} />
           <Route path='/PortfolioSite' component={PortfolioSite} />
-          <Route path='/BarBella' component={BarBella} />
+          <Route path='/BarBelle' component={BarBelle} />
 
           <Route path='/skills' component={Skills} />
           <Route path='/contact' component={Contact} />

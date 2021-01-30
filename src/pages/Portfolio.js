@@ -160,14 +160,14 @@ const Portfolio = () => {
 
 
                     <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
-                        history.push('/BarBella')
+                        history.push('/BarBelle')
                     }}>
                         <div>
                             <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
-                                <img src="\barbella.png" alt="" className='rounded my-auto' onLoad={(e) => e.target.classList.add('animate__animated', 'animate__fadeIn')} />
+                                <img src="\BarBelle.png" alt="" className='rounded my-auto' onLoad={(e) => e.target.classList.add('animate__animated', 'animate__fadeIn')} />
                             </div>
                             <div className='mx-4'>
-                                <h3>BarBella</h3>
+                                <h3>BarBelle</h3>
                                 <small>Barbell weight combination calculator</small>
                                 <br />
                                 <br />
@@ -176,7 +176,6 @@ const Portfolio = () => {
                             </div>
 
                             <div className="d-flex justify-content-center d-flex p-2">
-                                <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit</button></a>
                                 <Link to="./tomatokei" ><button className="btn btn-success mx-1 my-1"><i className="fa fa-bar-chart"></i>&nbsp;Details</button></Link>
                                 <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
                             </div>
