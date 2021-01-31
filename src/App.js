@@ -11,7 +11,7 @@ import Portfolio from './pages/Portfolio';
 import Tomatokei from './pages/projects/Tomatokei'
 import JYST from './pages/projects/JYST'
 import PortfolioSite from './pages/projects/PortfolioSite'
-import BarBella from './pages/projects/BarBella'
+import BarBelle from './pages/projects/BarBelle'
 
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
