@@ -76,11 +76,11 @@ const Portfolio = () => {
 
                     <ProjectCard
                         projectName={`JYST`}
-                        header={`A Pomodoro Clock and Time Management Tool`}
-                        desc1={`Designed to help manage ADHD symptoms and stay on task.`}
-                        desc2={`Integrated with Google Calendar for optimal ease of use.`}
-                        link={`https://tomatokei.herokuapp.com`}
-                        projectPage={`tomatokei`}
+                        header={`Junk Yard Scraper Tool`}
+                        desc1={`A web app that grabs inventory data from local junkyard websites and APIs, then sorts, displays, and emails that data to clients.`}
+                        desc2={`Uses web scraping and browser automation. (Cheerio and Puppeteer)`}
+                        link={`https://jystdev.herokuapp.com`}
+                        projectPage={`jyst`}
                         github={``}
                     />
 
