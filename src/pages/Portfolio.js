@@ -39,31 +39,6 @@ const Portfolio = () => {
                 <div className="d-flex row justify-content-around my-5 mx-auto">
 
 
-                    <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
-                        history.push('/tomatokei')
-                    }}>
-                        <div>
-                            <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
-                                <img src="\tomatokei.png" alt="" className='rounded my-auto' onLoad={(e) => e.target.classList.add('animate__animated', 'animate__fadeIn')} />
-                            </div>
-                            <div className='mx-4'>
-                                <h3>Tomatokei</h3>
-                                <small>A Pomodoro Clock and Time Management Tool</small>
-                                <br />
-                                <br />
-                                <p>Designed to help manage ADHD symptoms and stay on task.</p>
-                                <p>Integrated with Google Calendar for optimal ease of use.</p>
-                            </div>
-
-                            <div className="d-flex justify-content-center d-flex p-2">
-                                <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit</button></a>
-                                <Link to="./tomatokei" ><button className="btn btn-success mx-1 my-1"><i className="fa fa-bar-chart"></i>&nbsp;Details</button></Link>
-                                {/* <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a> */}
-                            </div>
-
-                        </div>
-                    </div>
-
                     <ProjectCard
                         projectName={`Tomatokei`}
                         header={`A Pomodoro Clock and Time Management Tool`}
@@ -84,26 +59,15 @@ const Portfolio = () => {
                         github={``}
                     />
 
-                    <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
-                        history.push('/JYST')
-                    }}>
-                        <div>
-                            <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
-                                <img src="\JYST.png" alt="" className='rounded' onLoad={(e) => e.target.classList.add('animate__animated', 'animate__fadeIn')} />
-                            </div>
-                            <h3>JYST</h3>
-                            <small>Junk Yard Scraper Tool</small>
-                            <br />
-                            <br />
-                            <p>A web app that grabs inventory data from local junkyard websites and APIs, then sorts, displays, and emails that data to clients.</p>
-                            <p>Uses web scraping and browser automation. (Cheerio and Puppeteer)</p>
-                            <div className="d-flex justify-content-center d-flex p-2">
-                                <a href="https://jystdev.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit</button></a>
-                                <Link to="./JYST" ><button className="btn btn-success mx-1 my-1"><i className="fa fa-bar-chart"></i>&nbsp;Details</button></Link>
-                                {/* <a href="https://github.com/bluegeartechnology/JYST" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a> */}
-                            </div>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        projectName={`Portfolio Site`}
+                        header={`Yes, the very portfolio site you're looking at right now!`}
+                        desc1={`Serves as a playground for me to flex new skills I've learned.`}
+                        desc2={`Come take a look under the hood at GitHub.`}
+                        link={`#`}
+                        projectPage={`#`}
+                        github={`https://github.com/bluegeartechnology/portfolio`}
+                    />
 
 
                     <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
