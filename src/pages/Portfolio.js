@@ -96,6 +96,16 @@ const Portfolio = () => {
                         </div>
                     </div>
 
+                    <ProjectCard
+                        projectName={`OhSee`}
+                        header={`An app to alleviate checking-type OCD symptoms.`}
+                        desc1={`Helps the user to keep track of the things they compulsively check, and prove to themselves that all is well.`}
+                        desc2={`"Oh, see? I did remember it after all."`}
+                        link={`#`}
+                        projectPage={`#`}
+                        github={``}
+                    />
+
 
                     <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
                         history.push('/tomatokei')
