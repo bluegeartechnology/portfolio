@@ -158,6 +158,17 @@ const Portfolio = () => {
                     </div>
 
 
+                    <ProjectCard
+                        projectName={`ReciPeace`}
+                        header={`Recipie Scaling Tool`}
+                        desc1={`Scales recipies based on user-given criteria, such as servings, calories, or grams of protein.`}
+                        desc2={`Also Looks up foods with the USDA's food database API to quickly get scaled portion sizes.`}
+                        link={`#`}
+                        projectPage={`#`}
+                        github={``}
+                    />
+
+
                     <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
                         history.push('/tomatokei')
                     }}>
