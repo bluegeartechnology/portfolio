@@ -15,7 +15,44 @@ function useHistory() {
 
 
 
+let reverseCalculateWeights = (e) => {
+    e.preventDefault();
 
+
+
+    let i = 0;
+    let availableWeights = []
+
+    let fourtyFives = document.getElementById('45s').value / 2
+    while (i < fourtyFives) { availableWeights.push(45); i++ }
+    i = 0;
+
+    let thirtyFives = document.getElementById('35s').value / 2
+    while (i < thirtyFives) { availableWeights.push(35); i++ }
+    i = 0;
+
+    let twentyFives = document.getElementById('25s').value / 2
+    while (i < twentyFives) { availableWeights.push(25); i++ }
+    i = 0;
+
+    let tens = document.getElementById('10s').value / 2
+    while (i < tens) { availableWeights.push(10); i++ }
+    i = 0;
+
+    let fives = document.getElementById('5s').value / 2
+    while (i < fives) { availableWeights.push(5); i++ }
+    i = 0;
+
+    let twoPointFives = document.getElementById('2.5s').value / 2
+    while (i < twoPointFives) { availableWeights.push(2.5); i++ }
+    i = 0;
+
+    console.log(availableWeights);
+
+    console.log(availableWeights.reduce((a, b) => a + b) * 2 + 45);
+
+
+}
 
 
 
@@ -331,6 +368,7 @@ const BarBelle = () => {
                     <div className="d-flex row justify-content-between">
                         <button className="btn btn-primary col-4 col-lg-2" onClick={(e) => calculateWeights(e)}>Calculate</button>
                         <button className="btn btn-warning col-6 col-md-4" onClick={(e) => setStandardOlympic(e)}>Reset Available Weights to <br />Standard 300lb Olympic Barbell Set</button>
+                        <button className="btn btn-success col-4 col-lg-2" onClick={(e) => reverseCalculateWeights(e)}>Reverse Calculation</button>
                     </div>
 
                     <div id="finalWeights" className='p-4 mx-auto col-10 text-center '></div>
