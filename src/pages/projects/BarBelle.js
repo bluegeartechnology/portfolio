@@ -50,6 +50,7 @@ let reverseCalculateWeights = (e) => {
     console.log(availableWeights);
 
     console.log(availableWeights.reduce((a, b) => a + b) * 2 + 45);
+    document.getElementById('finalWeights').innerHTML = `This bar and the weights on it total to ${availableWeights.reduce((a, b) => a + b) * 2 + 45} lbs.`
 
 
 }
@@ -368,7 +369,7 @@ const BarBelle = () => {
                     <div className="d-flex row justify-content-between">
                         <button className="btn btn-primary col-4 col-lg-2" onClick={(e) => calculateWeights(e)}>Calculate</button>
                         <button className="btn btn-warning col-6 col-md-4" onClick={(e) => setStandardOlympic(e)}>Reset Available Weights to <br />Standard 300lb Olympic Barbell Set</button>
-                        <button className="btn btn-success col-4 col-lg-2" onClick={(e) => reverseCalculateWeights(e)}>Reverse Calculation</button>
+                        <button className="btn btn-success col-4 col-lg-2" onClick={(e) => reverseCalculateWeights(e)}>Reverse Calculation ("What's on this bar?") </button>
                     </div>
 
                     <div id="finalWeights" className='p-4 mx-auto col-10 text-center '></div>
