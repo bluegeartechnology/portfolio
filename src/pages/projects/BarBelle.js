@@ -416,6 +416,9 @@ const BarBelle = () => {
                             &nbsp;Watch Video
                     </button>
 
+
+                    <a href="https://play.google.com/store/apps/details?id=com.bluegear.barbelle" target='blank'><button className="btn btn-success mx-1 my-1"><i className="fa fa-play"></i>&nbsp;Mobile Version</button></a>
+
                 </div>
 
                 <div className='container col-11 col-sm-10 col-md-10 col-lg-8 col-xl-8 bg-dark rounded px-5 py-4 my-3'>
