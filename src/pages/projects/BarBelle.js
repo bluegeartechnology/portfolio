@@ -419,7 +419,7 @@ const BarBelle = () => {
                     </button>
 
 
-                    <a href="https://play.google.com/store/apps/details?id=com.bluegear.barbelle" target='blank'><button className="btn btn-success mx-1 my-1"><i className="fa fa-play"></i>&nbsp;Mobile Version</button></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.bluegear.barbelle" target='blank'><button className="btn btn-success mx-1 my-1"><i className="fa fa-android"></i>&nbsp;Android Version</button></a>
 
                 </div>
 
