@@ -98,7 +98,7 @@ const Portfolio = () => {
                                 <br />
                                 <br />
                                 <p>App to calculate the possible combinations of weights that could be added to a barbell to reach a given weight.</p>
-                                <p></p>
+                                <p>Also has an Android version!</p>
                             </div>
 
                             <div className="d-flex justify-content-center d-flex p-2">
