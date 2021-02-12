@@ -71,7 +71,7 @@ function App() {
 
 
       <div id="footer" className='bg-light p-2 border'>
-        <h6 className='text-dark m-0 text-center'>© 2020 BlueGearTechnology</h6>
+        <h6 className='text-dark m-0 text-center'>{`© ${new Date().getFullYear()} BlueGearTechnology`}</h6>
       </div>
 
 
