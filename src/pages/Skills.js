@@ -136,6 +136,26 @@ const Skills = () => {
                     </div>
 
 
+                    <button class="btn btn-info text-light my-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#mobiledevSkills" aria-expanded="false" aria-controls="mobiledevSkills">
+                        <h3 className='text-center my-2'>Mobile Development Skills<i className="fa fa-arrow-down"></i></h3>
+                    </button>
+
+                    <div id='mobiledevSkills' className="collapse my-4 bg-light px-2 py-4 rounded border  row justify-content-center ">
+
+                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                            <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
+                            <h4 className='text-center text-dark'><i className="fa fa-android"></i>Android</h4>
+                        </div>
+
+
+                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                            <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
+                            <h4 className='text-center text-dark'><i className="fa fa-android"></i>Kotlin</h4>
+                        </div>
+
+                    </div>
+
+
                 </div>
 
 
