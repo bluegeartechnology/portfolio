@@ -149,7 +149,7 @@ const Skills = () => {
 
 
                         <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
+                            <img className='skillIcon col-12' src="kotlin.png" alt="" />
                             <h4 className='text-center text-dark'><i className="fa"></i>Kotlin</h4>
                         </div>
 
