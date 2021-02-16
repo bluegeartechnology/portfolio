@@ -143,8 +143,8 @@ const Skills = () => {
                     <div id='mobiledevSkills' className="collapse my-4 bg-light px-2 py-4 rounded border  row justify-content-center ">
 
                         <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
-                            <h4 className='text-center text-dark'><i className="fa fa-android"></i>Android</h4>
+                            <img className='skillIcon col-12' src="android.png" alt="" />
+                            <h4 className='text-center text-dark'><i className="fa"></i>Android</h4>
                         </div>
 
 
