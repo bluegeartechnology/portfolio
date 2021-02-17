@@ -90,7 +90,7 @@ const Portfolio = () => {
                     }}>
                         <div>
                             <div className="my-3 rounded projectImageDiv align-middle d-flex justify-content-center">
-                                <img src="\BarBelle.png" alt="" className='rounded my-auto' onLoad={(e) => e.target.classList.add('animate__animated', 'animate__fadeIn')} />
+                                <img src="\barbellemobile.png" alt="" className='rounded my-auto' onLoad={(e) => e.target.classList.add('animate__animated', 'animate__fadeIn')} />
                             </div>
                             <div className='mx-4'>
                                 <h3>BarBelle</h3>
