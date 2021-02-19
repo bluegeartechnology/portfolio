@@ -117,24 +117,6 @@ const Skills = () => {
 
                     </div>
 
-                    <button class="btn btn-danger my-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#certifications" aria-expanded="false" aria-controls="certifications">
-                        <h3 className='text-center my-2'>Certifications <i className="fa fa-arrow-down"></i></h3>
-                    </button>
-
-                    <div id='certifications' className="collapse my-4 bg-light px-2 py-4 rounded border  row justify-content-center ">
-
-                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
-                            <h4 className='text-center text-dark'>Google Ads<br />Search</h4>
-                        </div>
-
-                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
-                            <h4 className='text-center text-dark'>Paraben <br /> DSMO-DS</h4>
-                        </div>
-
-                    </div>
-
 
                     <button class="btn btn-info text-light my-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#mobiledevSkills" aria-expanded="false" aria-controls="mobiledevSkills">
                         <h3 className='text-center my-2'>Mobile Development Skills<i className="fa fa-arrow-down"></i></h3>
@@ -151,6 +133,25 @@ const Skills = () => {
                         <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
                             <img className='skillIcon col-12' src="kotlin.png" alt="" />
                             <h4 className='text-center text-dark'><i className="fa"></i>Kotlin</h4>
+                        </div>
+
+                    </div>
+
+
+                    <button class="btn btn-danger my-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#certifications" aria-expanded="false" aria-controls="certifications">
+                        <h3 className='text-center my-2'>Certifications <i className="fa fa-arrow-down"></i></h3>
+                    </button>
+
+                    <div id='certifications' className="collapse my-4 bg-light px-2 py-4 rounded border  row justify-content-center ">
+
+                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                            <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
+                            <h4 className='text-center text-dark'>Google Ads<br />Search</h4>
+                        </div>
+
+                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                            <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
+                            <h4 className='text-center text-dark'>Paraben <br /> DSMO-DS</h4>
                         </div>
 
                     </div>
