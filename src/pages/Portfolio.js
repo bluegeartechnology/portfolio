@@ -84,10 +84,10 @@ const Portfolio = () => {
 
 
                     <ProjectCard
-                        projectName={`OhSee`}
-                        header={`An app to alleviate checking-type OCD symptoms.`}
-                        desc1={`Helps the user to keep track of the things they compulsively check, and prove to themselves that all is well.`}
-                        desc2={`"Oh, see? I did remember it after all."`}
+                        projectName={`BarBelle`}
+                        header={`Barbell weight combination calculator.`}
+                        desc1={`App to calculate the possible combinations of weights that could be added to a barbell to reach a given weight.`}
+                        desc2={`Also has an Android version!`}
                         link={`#`}
                         projectPage={`#`}
                         github={``}
