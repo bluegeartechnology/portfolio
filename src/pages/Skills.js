@@ -105,15 +105,30 @@ const Skills = () => {
 
 
 
-                        <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="photoshop.png" alt="" />
+                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                            <img className='skillIcon col-12' src="photoshop.png" alt="" />
+                            <h4 className='text-center text-dark'>Photoshop</h4>
+                        </div>
 
-                        <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="premiere.png" alt="" />
+                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                            <img className='skillIcon col-12' src="premiere.png" alt="" />
+                            <h4 className='text-center text-dark'>Premiere</h4>
+                        </div>
 
-                        <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="aftereffects.png" alt="" />
+                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                            <img className='skillIcon col-12' src="aftereffects.png" alt="" />
+                            <h4 className='text-center text-dark'>After Effects</h4>
+                        </div>
 
-                        <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="audition.png" alt="" />
+                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                            <img className='skillIcon col-12' src="audition.png" alt="" />
+                            <h4 className='text-center text-dark'>Audition</h4>
+                        </div>
 
-                        <img className='skillIcon col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob' src="flstudio.png" alt="" />
+                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                            <img className='skillIcon col-12' src="flstudio.png" alt="" />
+                            <h4 className='text-center text-dark'>FL Studio</h4>
+                        </div>
 
                     </div>
 
