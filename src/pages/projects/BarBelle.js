@@ -174,6 +174,11 @@ let calculateWeights = (e) => {
             console.log(`Dividing and symmetrizing.`);
             usedWeights = usedWeights.map(weight => weight / 2)
 
+            //Adding invisble weights to keep sizing consistent.
+            console.log(`usedWeights.length: ${usedWeights.length}`)
+            while (usedWeights.length < 7) {
+                usedWeights.push(`blank`)
+            }
             //usedWeights = usedWeights.push(usedWeights.reverse())
             console.log(usedWeights);
 
@@ -188,6 +193,7 @@ let calculateWeights = (e) => {
                     if (weight == 10) { return `<div id="" class='ten weight-left btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>` }
                     if (weight == 5) { return `<div id="" class='five weight-left btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>` }
                     if (weight == 2.5) { return `<div id="" class='twoPointFive weight-left btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>` }
+                    if (weight == `blank`) { return `<div id="" class='blankWeight weight-left btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>B</div>` }
                 }),
 
                 `<div id="" class='bar border btn text-light bg-dark p-0 my-5 col-1 col-sm-4 col-md-4 col-lg-6'><div className="text-center">45</div></div>`,
@@ -199,6 +205,7 @@ let calculateWeights = (e) => {
                     if (weight == 10) { return `<div id="" class='ten weight-right btn text-light px-0 my-3 border rounded col text-center bg-primary'>10</div>` }
                     if (weight == 5) { return `<div id="" class='five weight-right btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>` }
                     if (weight == 2.5) { return `<div id="" class='twoPointFive weight-right btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>` }
+                    if (weight == `blank`) { return `<div id="" class='blankWeight weight-right btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>B</div>` }
                 })
             ].toString().replace(/,/g, '')
 
