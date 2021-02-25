@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 
 function useHistory() {
     useEffect(() => {
-        window.scrollTo(0, 0)
+        //window.scrollTo(0, 0)
         // document.getElementById('imageAndEmbed').innerHTML = `<img width='100%' src="\/tomatokei.png" alt="" className='rounded my-auto' />`
     }, []);
 }
@@ -464,7 +464,8 @@ const BarBelle = () => {
 
 
                     <h2>Technologies Used</h2>
-                    <div className="text-light my-5 mx-auto">
+                    <h3 className='my-3'>Web Version</h3>
+                    <div className="text-light mb-5 mx-auto">
 
                         <div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
                             <img className='skillIcon col-12' src="html5.png" alt="" />
@@ -495,6 +496,11 @@ const BarBelle = () => {
                             <h3 className='text-center'>Bootstrap</h3>
                         </div>
 
+                    </div>
+
+                    <hr />
+                    <h3 className='my-3'>Android Version</h3>
+                    <div className="text-light my-5 mx-auto">
                         <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
                             <img className='skillIcon col-12' src="android.png" alt="" />
                             <h3 className='text-center'>Android</h3>
@@ -505,7 +511,6 @@ const BarBelle = () => {
                             <h3 className='text-center'>Kotlin</h3>
                         </div>
                     </div>
-
 
 
                     <h2>What I learned</h2>
