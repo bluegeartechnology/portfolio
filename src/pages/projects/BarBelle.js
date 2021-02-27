@@ -500,7 +500,7 @@ const BarBelle = () => {
 
                     <hr />
                     <h3 className='my-3'>Android Version</h3>
-                    <div className="text-light my-5 mx-auto">
+                    <div className="text-light mb-5 mx-auto">
                         <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
                             <img className='skillIcon col-12' src="android.png" alt="" />
                             <h3 className='text-center'>Android</h3>
