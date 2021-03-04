@@ -32,7 +32,10 @@ const Home = () => {
                         <h1 className='ml-5 mb-2 text-primary animate__animated animate__fadeInBottomRight'>######</h1>
 
 
-                        <h4 className='animate__animated animate__fadeIn mb-0'>Full Stack Web Developer</h4>
+                        <div className="animate__animated animate__fadeIn mb-0">
+                            <h4 className=''>Full Stack JavaScript Developer</h4>
+                            <h6>MongoDB | Express | React | Node</h6>
+                        </div>
 
 
 
