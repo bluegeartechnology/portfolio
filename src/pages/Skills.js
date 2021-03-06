@@ -24,9 +24,9 @@ const Skills = () => {
                         <h3 className='text-center my-2'>Web Development Skills <i className="fa fa-arrow-down"></i></h3>
                     </button>
 
-                    <div id="webdevSkills" className='my-4 bg-light px-4 py-4 rounded border collapse row justify-content-center '>
+                    <div id="webdevSkills" className='bg-light rounded border collapse row justify-content-center '>
 
-                        <div className="row justify-content-around">
+                        <div className="row justify-content-around my-4 p-4">
 
                             <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
                                 <img className='skillIcon col-12' src="html5.png" alt="" />
@@ -101,34 +101,40 @@ const Skills = () => {
                         <h3 className='text-center my-2'>Digital Media Skills <i className="fa fa-arrow-down"></i></h3>
                     </button>
 
-                    <div id='digitalMediaSkills' className="collapse my-4 bg-light px-2 py-4 rounded border row justify-content-center ">
+                    <div id='digitalMediaSkills' className="collapse bg-light rounded border row justify-content-center ">
 
 
 
-                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="photoshop.png" alt="" />
-                            <h4 className='text-center text-dark'>Photoshop</h4>
+                        <div className="row justify-content-around my-4 p-4">
+
+                            <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                                <img className='skillIcon col-12' src="photoshop.png" alt="" />
+                                <h4 className='text-center text-dark'>Photoshop</h4>
+                            </div>
+
+                            <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                                <img className='skillIcon col-12' src="premiere.png" alt="" />
+                                <h4 className='text-center text-dark'>Premiere</h4>
+                            </div>
+
+                            <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                                <img className='skillIcon col-12' src="aftereffects.png" alt="" />
+                                <h4 className='text-center text-dark'>After Effects</h4>
+                            </div>
+
+                            <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                                <img className='skillIcon col-12' src="audition.png" alt="" />
+                                <h4 className='text-center text-dark'>Audition</h4>
+                            </div>
+
+                            <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                                <img className='skillIcon col-12' src="flstudio.png" alt="" />
+                                <h4 className='text-center text-dark'>FL Studio</h4>
+                            </div>
+
                         </div>
 
-                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="premiere.png" alt="" />
-                            <h4 className='text-center text-dark'>Premiere</h4>
-                        </div>
 
-                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="aftereffects.png" alt="" />
-                            <h4 className='text-center text-dark'>After Effects</h4>
-                        </div>
-
-                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="audition.png" alt="" />
-                            <h4 className='text-center text-dark'>Audition</h4>
-                        </div>
-
-                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="flstudio.png" alt="" />
-                            <h4 className='text-center text-dark'>FL Studio</h4>
-                        </div>
 
                     </div>
 
@@ -137,18 +143,24 @@ const Skills = () => {
                         <h3 className='text-center my-2'>Mobile Development Skills<i className="fa fa-arrow-down"></i></h3>
                     </button>
 
-                    <div id='mobiledevSkills' className="collapse my-4 bg-light px-2 py-4 rounded border  row justify-content-center ">
+                    <div id='mobiledevSkills' className="collapse bg-light rounded border  row justify-content-center ">
 
-                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="android.png" alt="" />
-                            <h4 className='text-center text-dark'><i className="fa"></i>Android</h4>
+                        <div className="row justify-content-around my-4 p-4">
+
+                            <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                                <img className='skillIcon col-12' src="android.png" alt="" />
+                                <h4 className='text-center text-dark'><i className="fa"></i>Android</h4>
+                            </div>
+
+
+                            <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                                <img className='skillIcon col-12' src="kotlin.png" alt="" />
+                                <h4 className='text-center text-dark'><i className="fa"></i>Kotlin</h4>
+                            </div>
+
                         </div>
 
 
-                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="kotlin.png" alt="" />
-                            <h4 className='text-center text-dark'><i className="fa"></i>Kotlin</h4>
-                        </div>
 
                     </div>
 
@@ -157,17 +169,24 @@ const Skills = () => {
                         <h3 className='text-center my-2'>Certifications <i className="fa fa-arrow-down"></i></h3>
                     </button>
 
-                    <div id='certifications' className="collapse my-4 bg-light px-2 py-4 rounded border  row justify-content-center ">
+                    <div id='certifications' className="collapse bg-light rounded border  row justify-content-center ">
 
-                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
-                            <h4 className='text-center text-dark'>Google Ads<br />Search</h4>
+
+                        <div className="row justify-content-around my-4 p-4">
+
+                            <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                                <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
+                                <h4 className='text-center text-dark'>Google Ads<br />Search</h4>
+                            </div>
+
+                            <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                                <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
+                                <h4 className='text-center text-dark'>Paraben <br /> DSMO-DS</h4>
+                            </div>
+
                         </div>
 
-                        <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
-                            <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" />
-                            <h4 className='text-center text-dark'>Paraben <br /> DSMO-DS</h4>
-                        </div>
+
 
                     </div>
 
