@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLocation, BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { useEffect } from 'react'
-import Project from '../../Components/ProjectPage'
+import ProjectPage from '../../Components/ProjectPage'
 
 function useHistory() {
     useEffect(() => {
@@ -18,7 +18,17 @@ const Tomatokei = () => {
     return (
         <div id="portfolio" className='py-5 my-4  text-light'>
 
-            {/*<Project name='tomatokei' />*/}
+            {
+                <ProjectPage
+                    name='tomatokei'
+                    what={'what'}
+                    how={'how'}
+                    tech={'tech'}
+                    learned={'Learned'}
+
+
+                />
+            }
             <div className="animate__animated animate__fadeIn">
                 <h2 className='text-center col-9 mx-auto'>Tomatokei</h2>
 
