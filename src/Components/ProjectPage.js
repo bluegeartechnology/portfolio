@@ -25,7 +25,7 @@ const ProjectPage = (props) => {
                 </div>
 
                 <div className="d-flex justify-content-center d-flex p-2">
-                    <a href="https://tomatokei.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit On Heroku</button></a>
+                    <a href={`https://${props.name}.herokuapp.com`} target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit On Heroku</button></a>
 
                     <button className="btn btn-success mx-1 my-1" onClick={
                         () => {
@@ -47,7 +47,7 @@ const ProjectPage = (props) => {
                             &nbsp;Watch Video
                     </button>
 
-                    <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
+                    <a href={`https://github.com/bluegeartechnology/${props.name}`} target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
                 </div>
 
                 <div className='container col-11 col-sm-10 col-md-10 col-lg-8 col-xl-8 bg-dark rounded px-5 py-4 my-3'>
