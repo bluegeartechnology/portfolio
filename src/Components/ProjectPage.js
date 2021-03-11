@@ -11,6 +11,8 @@ function useHistory() {
 
 const ProjectPage = (props) => {
 
+    let buttonArray = props.buttons ? props.buttons : []
+    console.log(buttonArray);
 
     useHistory();
 
@@ -29,7 +31,7 @@ const ProjectPage = (props) => {
 
                     <button className="btn btn-success mx-1 my-1" onClick={
                         () => {
-                            document.getElementById('imageAndEmbed').innerHTML = `<iframe id='embeddedApp' className='mx-auto' src="https://tomatokei.herokuapp.com" frameborder="1"></iframe>`
+                            document.getElementById('imageAndEmbed').innerHTML = `<iframe id='embeddedApp' className='mx-auto' src=${`https://${props.name}.herokuapp.com`} frameborder="1"></iframe>`
                             document.getElementById('embeddedApp').width = window.innerWidth
                             document.getElementById('embeddedApp').height = window.innerHeight
                         }
@@ -37,7 +39,7 @@ const ProjectPage = (props) => {
                     }>
                         <i className="fa fa-arrow-down"></i>
                             &nbsp;Embed Here
-                            </button>
+                    </button>
 
                     <button className='btn btn-danger mx-1 my-1' onClick={() => {
                         document.getElementById('imageAndEmbed').innerHTML = `<iframe id='embeddedApp' width="784" height="441" src="https://www.youtube.com/embed/03yBSzj7vKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`

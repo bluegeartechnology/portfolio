@@ -10,10 +10,11 @@ function useHistory() {
     }, []);
 }
 
-const Tomatokei = () => {
+const Tomatokei = (props) => {
 
 
     useHistory();
+
 
     return (
         <div id="portfolio" className='py-5 my-4  text-light'>
@@ -25,6 +26,7 @@ const Tomatokei = () => {
                     how={'how'}
                     tech={'tech'}
                     learned={'Learned'}
+                    buttons={['github']}
 
 
                 />
