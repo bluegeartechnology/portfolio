@@ -39,11 +39,15 @@ const ProjectPage = (props) => {
             &nbsp;Embed Here
     </button>
 
+    let hrkButton = <a href={`https://${props.name}.herokuapp.com`} target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit On Heroku</button></a>
+
 
     let buttonHTML = [
-        ghButton,
+        hrkButton,
+        embButton,
         ytButton,
-        embButton
+        ghButton
+
     ]
 
     useHistory();
@@ -61,7 +65,7 @@ const ProjectPage = (props) => {
                 </div>
 
                 <div className="d-flex justify-content-center d-flex p-2">
-                    <a href={`https://${props.name}.herokuapp.com`} target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit On Heroku</button></a>
+
 
 
                     <button className='btn btn-danger mx-1 my-1' onClick={() => {
