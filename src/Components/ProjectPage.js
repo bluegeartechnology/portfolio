@@ -81,7 +81,10 @@ const ProjectPage = (props) => {
                     {props.how}
 
                     <h2>Technologies Used</h2>
-                    {props.tech}
+                    <div className="text-light my-5 mx-auto">
+                        {props.tech}
+                    </div>
+
 
                     <h2>What I learned</h2>
                     {props.learned}
