@@ -21,7 +21,7 @@ const Tomatokei = (props) => {
 
             {
                 <ProjectPage
-                    name='tomatokei'
+                    name='Tomatokei'
                     what={'what'}
                     how={'how'}
                     tech={'tech'}

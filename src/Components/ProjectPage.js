@@ -23,7 +23,7 @@ const ProjectPage = (props) => {
             &nbsp;Watch Video
     </button>
 
-    let ghButton = <a href='https://github.com/bluegeartechnology/${props.name}' target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
+    let ghButton = <a href={`https://github.com/bluegeartechnology/${props.name}`} target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
 
 
     let embButton =
@@ -55,9 +55,9 @@ const ProjectPage = (props) => {
     return (
         <div id="portfolio" className='py-5 my-4  text-light'>
             <div className="animate__animated animate__fadeIn">
-                <h2 className='text-center col-9 mx-auto'>Tomatokei</h2>
+                <h2 className='text-center col-9 mx-auto'>{props.name}</h2>
 
-                {buttonHTML}
+
 
 
                 <div id='imageAndEmbed' className="my-3 rounded mx-auto d-flex justify-content-center col-11 col-lg-6">
@@ -68,15 +68,9 @@ const ProjectPage = (props) => {
 
 
 
-                    <button className='btn btn-danger mx-1 my-1' onClick={() => {
-                        document.getElementById('imageAndEmbed').innerHTML = `<iframe id='embeddedApp' width="784" height="441" src="https://www.youtube.com/embed/03yBSzj7vKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+                    {buttonHTML}
 
-                    }}>
-                        <i className="fa fa-play"></i>
-                            &nbsp;Watch Video
-                    </button>
 
-                    <a href={`https://github.com/bluegeartechnology/${props.name}`} target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
                 </div>
 
                 <div className='container col-11 col-sm-10 col-md-10 col-lg-8 col-xl-8 bg-dark rounded px-5 py-4 my-3'>
