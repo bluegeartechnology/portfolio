@@ -152,7 +152,7 @@ const Tomatokei = (props) => {
                     how={how}
                     tech={tech}
                     learned={learned}
-                    buttons={['github']}
+                    buttons={['github', 'youtube', 'embed', 'heroku']}
                 />
             }
 

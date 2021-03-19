@@ -43,12 +43,17 @@ const ProjectPage = (props) => {
 
 
     let buttonHTML = [
-        hrkButton,
-        embButton,
-        ytButton,
-        ghButton
+        // hrkButton,
+        // embButton,
+        // ytButton,
+        // ghButton
 
     ]
+
+    props.buttons.includes('heroku') ? buttonHTML.push(hrkButton) : console.log('No Keroku button.');
+    props.buttons.includes('embed') ? buttonHTML.push(embButton) : console.log('No embed button.');
+    props.buttons.includes('youtube') ? buttonHTML.push(ytButton) : console.log('No YouTube button.');
+    props.buttons.includes('github') ? buttonHTML.push(ghButton) : console.log('No Github button.');
 
     useHistory();
 
