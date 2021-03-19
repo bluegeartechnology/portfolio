@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLocation, BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { useEffect } from 'react'
+import ProjectPage from '../../Components/ProjectPage'
 
 function useHistory() {
     useEffect(() => {
@@ -10,11 +11,31 @@ function useHistory() {
 
 const JYST = () => {
 
+    let what = <></>
+    let how = <></>
+    let tech = <></>
+    let learned = <></>
+
 
     useHistory();
 
     return (
         <div id="portfolio" className='py-5 my-4  text-light'>
+
+
+            {
+                <ProjectPage
+                    name='JYST'
+                    what={what}
+                    how={how}
+                    tech={tech}
+                    learned={learned}
+                    buttons={['github', 'youtube', 'embed', 'heroku']}
+                />
+            }
+
+
+
             <div className="animate__animated animate__fadeIn">
                 <h2 className='text-center col-9 mx-auto'>JYST</h2>
 
