@@ -42,13 +42,7 @@ const ProjectPage = (props) => {
     let hrkButton = <a href={`https://${props.name}.herokuapp.com`} target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit On Heroku</button></a>
 
 
-    let buttonHTML = [
-        // hrkButton,
-        // embButton,
-        // ytButton,
-        // ghButton
-
-    ]
+    let buttonHTML = []
 
     props.buttons.includes('heroku') ? buttonHTML.push(hrkButton) : console.log('No Keroku button.');
     props.buttons.includes('embed') ? buttonHTML.push(embButton) : console.log('No embed button.');
