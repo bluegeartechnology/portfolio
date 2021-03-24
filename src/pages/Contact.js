@@ -46,7 +46,7 @@ const Contact = () => {
                             <h3 id='youtube' >LinkedIn</h3>
                         </a>
 
-                        <a href='https://youtube.com/' target='blank' className='contactLink text-center text-danger hvr-grow  btn col-12 col-sm-6 col-md-4 col-lg-3'>
+                        <a href='https://www.youtube.com/channel/UCqkGitdTRT7cnT8N6rX8ucA' target='blank' className='contactLink text-center text-danger hvr-grow  btn col-12 col-sm-6 col-md-4 col-lg-3'>
                             <i className="fa fa-youtube-play fa-5x mx-auto"></i>
                             <h3 id='youtube' >YouTube</h3>
                         </a>
