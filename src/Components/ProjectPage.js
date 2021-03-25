@@ -39,7 +39,7 @@ const ProjectPage = (props) => {
             &nbsp;Embed Here
     </button>
 
-    let hrkButton = <a href={`https://${props.name}.herokuapp.com`} target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit On Heroku</button></a>
+    let hrkButton = <a href={`https://${props.heroku}.herokuapp.com`} target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit On Heroku</button></a>
 
 
     let buttonHTML = []
