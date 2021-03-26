@@ -78,7 +78,17 @@ const JYST = () => {
         </div>
     </>
 
-    let learned = <></>
+    let learned = <>
+        <p>
+            This was a tough one.
+            No project prior to this one required as much thought about the commercial viability of such a system, or how far it could or should be expanded.
+            Who are my users?
+            What is my business model?
+            Who would pay for such a system?
+            What tools and features would they actually use?
+            The importance of carefully considering the business side of things, rather just focusing on the coding side and excitedly diving head-first into feature creep, is a lesson I won't soon forget.
+    </p>
+    </>
 
 
     useHistory();
