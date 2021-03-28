@@ -109,61 +109,6 @@ const JYST = () => {
                 />
             }
 
-
-
-            <div className="animate__animated animate__fadeIn">
-                <h2 className='text-center col-9 mx-auto'>JYST</h2>
-
-
-                <div id='imageAndEmbed' className="my-3 rounded mx-auto d-flex justify-content-center col-11 col-lg-3">
-                    <iframe className='d-none' src="https://downforeveryoneorjustme.com/jystdev.herokuapp.com" frameborder="1"></iframe>
-                    <img width='100%' src="\JYST.png" alt="" className='rounded my-auto' />
-                </div>
-
-                <div className="d-flex justify-content-center p-2">
-                    <a href="https://jystdev.herokuapp.com" target='blank'><button className="btn btn-primary mx-1 my-1"><i className="fa fa-globe"></i>&nbsp;Visit On Heroku</button></a>
-
-                    <button className="btn btn-success mx-1 my-1" onClick={
-                        () => {
-                            document.getElementById('imageAndEmbed').innerHTML = `<iframe id='embeddedApp' className='mx-auto' src="https://jystdev.herokuapp.com" frameborder="1"></iframe>`
-                            document.getElementById('embeddedApp').width = window.innerWidth
-                            document.getElementById('embeddedApp').height = window.innerHeight
-                        }
-
-                    }>
-                        <i className="fa fa-arrow-down"></i>
-                            &nbsp;Embed Here
-                            </button>
-
-                    <button className='btn btn-danger mx-1 my-1' onClick={() => {
-                        document.getElementById('imageAndEmbed').innerHTML = `<iframe id='embeddedApp' width="784" height="441" src="https://www.youtube.com/embed/03yBSzj7vKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-
-                    }}>
-                        <i className="fa fa-play"></i>
-                            &nbsp;Watch Video
-                    </button>
-
-                    <a href="https://github.com/bluegeartechnology/Tomatokei" target='blank'><button className="btn btn-secondary mx-1 my-1"><i className="fa fa-github"></i>&nbsp;GitHub</button></a>
-                </div>
-
-                <div className='container col-11 col-sm-10 col-md-10 col-lg-8 col-xl-8 bg-dark rounded px-5 py-4 my-3'>
-                    <h2>What is it?</h2>
-
-
-                    <h2>Technologies Used</h2>
-                    <div className="text-light my-5">
-
-
-                    </div>
-
-
-
-                    <h2>What I learned</h2>
-
-                </div>
-
-
-            </div>
         </div>
     )
 }
