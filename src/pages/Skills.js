@@ -70,6 +70,11 @@ const Skills = () => {
                                 <h3 className='text-center text-dark'>Node.js</h3>
                             </div>
 
+                            <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                                <img className='skillIcon col-12' src="wordpress.png" alt="" />
+                                <h3 className='text-center text-dark'>WordPress</h3>
+                            </div>
+
 
 
 
