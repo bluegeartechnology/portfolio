@@ -133,7 +133,7 @@ const Skills = () => {
                                 <h4 className='text-center text-dark'>FL Studio</h4>
                             </div>
 
-                            <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
+                            <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob py-4'>
                                 <img className='skillIcon col-12' src="blender.svg" alt="" />
                                 <h4 className='text-center text-dark'>Blender</h4>
                             </div>
