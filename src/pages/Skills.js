@@ -56,7 +56,7 @@ const Skills = () => {
                             </div>
 
                             <div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'>
-                                <img className='skillIcon col-12' src="mongodb.png" alt="" />
+                                <img className='skillIcon col-12 py-4' src="mongodb.png" alt="" />
                                 <h3 className='text-center text-dark'>mongoDB</h3>
                             </div>
 
