@@ -456,7 +456,7 @@ const BarBelle = () => {
 
                     <p>If it's too much, it doesn't use the pair. If it's not enough, it adds the weight of the pair to the whole. If it's reached the desired weight exactly, it has succeeded.</p>
 
-                    <p>Of course, it also checks for edge cases which arise from this methodology. if there's no combination of plates in the given set which will achieve the desired weight, it will say as much.</p>
+                    <p>Of course, it also checks for edge cases which arise from this methodology. If there's no combination of plates in the given set which will achieve the desired weight, it will say as much.</p>
 
                     <h5>Existing Weight Calculation</h5>
                     <p>In the case that the bar already an unknown amount of weight on it, the user inputs which weights are on the bar by tapping the appropriate weight icons. This is generally much faster than using a calculator every time.</p>

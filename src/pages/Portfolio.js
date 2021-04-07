@@ -246,7 +246,7 @@ const Portfolio = () => {
 
                 </div>
 
-                <Link to="/projects" className='text-decoration-none'><button className='btn btn-warning d-block mx-auto'><h3>See Even More Projects!</h3></button></Link>
+                {/* <Link to="/projects" className='text-decoration-none'><button className='btn btn-warning d-block mx-auto'><h3>See Even More Projects!</h3></button></Link> */}
 
             </div>
 
