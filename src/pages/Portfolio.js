@@ -59,6 +59,17 @@ const Portfolio = () => {
                         github={``}
                     />
 
+
+                    <ProjectCard
+                        projectName={`BarBelle`}
+                        header={`Barbell weight combination calculator.`}
+                        desc1={`App to calculate the possible combinations of weights that could be added to a barbell to reach a given weight.`}
+                        desc2={`Also has an Android version!`}
+                        link={`#`}
+                        projectPage={`#`}
+                        github={``}
+                    />
+
                     <ProjectCard
                         projectName={`Portfolio Site`}
                         header={`Yes, the very portfolio site you're looking at right now!`}
@@ -71,7 +82,7 @@ const Portfolio = () => {
 
 
 
-
+                    {/* 
                     <ProjectCard
                         projectName={`OhSee`}
                         header={`An app to alleviate checking-type OCD symptoms.`}
@@ -80,21 +91,12 @@ const Portfolio = () => {
                         link={`#`}
                         projectPage={`#`}
                         github={``}
-                    />
-
-
-                    <ProjectCard
-                        projectName={`BarBelle`}
-                        header={`Barbell weight combination calculator.`}
-                        desc1={`App to calculate the possible combinations of weights that could be added to a barbell to reach a given weight.`}
-                        desc2={`Also has an Android version!`}
-                        link={`#`}
-                        projectPage={`#`}
-                        github={``}
-                    />
+                    /> */}
 
 
 
+
+                    {/* 
 
                     <div className="portfolioProjectCard btn bg-light col-11 col-sm-11 col-md-5 col-lg-3 my-2 mx-1 " onClick={() => {
                         history.push('/BarBelle')
@@ -236,7 +238,7 @@ const Portfolio = () => {
                             </div>
 
                         </div>
-                    </div>
+                    </div> */}
 
 
 

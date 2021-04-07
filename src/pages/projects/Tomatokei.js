@@ -119,7 +119,6 @@ const Tomatokei = (props) => {
     </>
 
     let learned = <>
-        <h2>What I learned</h2>
         <p>
             This was my first truly full-stack application where everything really clicked and I knew what I was doing.
             As such, there was a lot of trial and error along the way, and it shows.
@@ -135,9 +134,7 @@ const Tomatokei = (props) => {
                 Because this was the first time I'd attempted understanding and implementing an authentication system, it's built from scratch based on tutorials.
                 There was little practical reason to do this other than learning, and I would definitely avoid reinventing the wheel in the future, and use something like Passport instead.
                         </li>
-            <li>
 
-            </li>
         </ul>
     </>
 

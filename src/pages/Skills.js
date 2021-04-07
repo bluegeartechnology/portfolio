@@ -6,7 +6,7 @@ const Skills = () => {
 
     useEffect(() => {
 
-        //setTimeout(() => document.getElementById('webdevSkillsButton').click(), 500)
+        setTimeout(() => document.getElementById('webdevSkillsButton').click(), 500)
 
     }, [])
 
