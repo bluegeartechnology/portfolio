@@ -14,7 +14,7 @@ const Home = () => {
 
 
                 <div id='headerOverlay' className="text-dark">
-                    <video autoPlay muted loop id="headerVideo" src="./CircuitBoards7_Videvo.mov" type="video/mp4" />
+                    {/* <video autoPlay muted loop id="headerVideo" src="./CircuitBoards7_Videvo.mov" type="video/mp4" /> */}
                 </div>
 
 

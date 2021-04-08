@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useLocation, BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import ReactDOM from 'react-dom'
 import { HashLink } from 'react-router-hash-link'
 import "animate.css"
 import "hover.css"
@@ -25,11 +26,13 @@ function App() {
 
 
   return (
-    <div className="App">
+
+    <Router>
+      <div className="App">
 
 
 
-      <Router>
+
 
         <ScrollToTop />
 
@@ -63,22 +66,25 @@ function App() {
 
 
         </Switch>
-      </Router>
 
 
 
 
 
 
-      <div id="footer" className='bg-light p-2 border border-light border-top-1'>
-        <h6 className='text-dark m-0 text-center'>{`© ${new Date().getFullYear()} BlueGearTechnology`}</h6>
+
+        <div id="footer" className='bg-light p-2 border border-light border-top-1'>
+          <h6 className='text-dark m-0 text-center'>{`© ${new Date().getFullYear()} BlueGearTechnology`}</h6>
+        </div>
+
+
+
+
       </div>
-
-
-
-
-    </div>
+    </Router>
   );
 }
+
+ReactDOM.render(<App />, document.getElementById('root'));
 
 export default App;

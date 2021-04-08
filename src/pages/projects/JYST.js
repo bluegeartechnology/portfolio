@@ -6,6 +6,7 @@ import ProjectPage from '../../Components/ProjectPage'
 function useHistory() {
     useEffect(() => {
         window.scrollTo(0, 0)
+        document.getElementById('imageAndEmbed').innerHTML = `<img src="\/JYST.png" alt="" className='rounded my-auto' />`
     }, []);
 }
 
