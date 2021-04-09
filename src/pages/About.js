@@ -28,6 +28,7 @@ const About = () => {
                         All physical land has been explored, and now we're building new lands in an abstract space.
                         Programming is the means to explore and settle that frontier.
                         I want to explore that space, and build it out even further.
+                        If we're successful, then yet another new frontier may be discovered.
             </p>
 
                     <h3>Current Goals and Future Plans</h3>
