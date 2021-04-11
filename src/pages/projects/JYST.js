@@ -105,7 +105,7 @@ const JYST = () => {
                     how={how}
                     tech={tech}
                     learned={learned}
-                    buttons={['github', 'youtube', 'embed', 'heroku']}
+                    buttons={['youtube', 'embed', 'heroku']}
                     heroku={`jystdev`}
                 />
             }
