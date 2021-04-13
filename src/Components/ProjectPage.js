@@ -52,7 +52,7 @@ const ProjectPage = (props) => {
     useHistory();
 
     return (
-        <div id="portfolio" className='py-5 my-4  text-light'>
+        <div id="projectPage" className='py-5 my-4  text-light'>
             <div className="animate__animated animate__fadeIn">
                 <h2 className='text-center col-9 mx-auto'>{props.name}</h2>
 
