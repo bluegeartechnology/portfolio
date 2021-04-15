@@ -66,7 +66,7 @@ const Portfolio = () => {
                         desc1={`App to calculate the possible combinations of weights that could be added to a barbell to reach a given weight.`}
                         desc2={`Also has an Android version!`}
                         link={`#`}
-                        projectPage={`#`}
+                        projectPage={`BarBelle`}
                         github={``}
                     />
 
@@ -75,7 +75,7 @@ const Portfolio = () => {
                         header={`Yes, the very portfolio site you're looking at right now!`}
                         desc1={`Serves as a playground for me to flex new skills I've learned.`}
                         desc2={`Come take a look under the hood at GitHub.`}
-                        link={`#`}
+                        link={``}
                         projectPage={`#`}
                         github={`https://github.com/bluegeartechnology/portfolio`}
                     />
