@@ -9,7 +9,7 @@ const About = () => {
 
                     <h2 className=''>About Me</h2>
 
-                    <h3>Why I Code</h3>
+                    <h3 className='mt-3'>Why I Code</h3>
                     <p>
                         I've always been fascinated by systems.
                         The interplay of components which yields an end result.
