@@ -515,7 +515,7 @@ const BarBelle = () => {
 
                     <h2>What I learned</h2>
                     <p>
-
+                        Although I'd previously played with mobile development technologies such as React Native in the past, this was my first real forray into Android development proper.
                     </p>
 
                 </div>
