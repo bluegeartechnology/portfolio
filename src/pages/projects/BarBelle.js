@@ -344,27 +344,27 @@ const BarBelle = () => {
                     <div className="mx-auto d-flex row justify-content-center">
                         <div className=" d-flex col-4 col-lg-2">
                             <p className="my-auto col-4 col-lg-5">45s</p>
-                            <input className='col-6' type="number" name="45s" id="45s" step="2" defaultValue="2" min="0" />
+                            <input className='col-6 form-control plateCounter' type="number" name="45s" id="45s" step="2" defaultValue="2" min="0" />
                         </div>
                         <div className=" d-flex col-4 col-lg-2">
                             <p className="my-auto col-4 col-lg-5">35s</p>
-                            <input className='col-6' type="number" name="35s" id="35s" step="2" defaultValue="2" min="0" />
+                            <input className='col-6 form-control plateCounter' type="number" name="35s" id="35s" step="2" defaultValue="2" min="0" />
                         </div>
                         <div className=" d-flex col-4 col-lg-2">
                             <p className="my-auto col-4 col-lg-5">25s</p>
-                            <input className='col-6' type="number" name="25s" id="25s" step="2" defaultValue="2" min="0" />
+                            <input className='col-6 form-control plateCounter' type="number" name="25s" id="25s" step="2" defaultValue="2" min="0" />
                         </div>
                         <div className=" d-flex col-4 col-lg-2">
                             <p className="my-auto col-4 col-lg-5">10s</p>
-                            <input className='col-6' type="number" name="10s" id="10s" step="2" defaultValue="2" min="0" />
+                            <input className='col-6 form-control plateCounter' type="number" name="10s" id="10s" step="2" defaultValue="2" min="0" />
                         </div>
                         <div className=" d-flex col-4 col-lg-2">
                             <p className="my-auto col-4 col-lg-5">5s</p>
-                            <input className='col-6' type="number" name="5s" id="5s" step="2" defaultValue="4" min="0" />
+                            <input className='col-6 form-control plateCounter' type="number" name="5s" id="5s" step="2" defaultValue="4" min="0" />
                         </div>
                         <div className=" d-flex col-4 col-lg-2">
                             <p className="my-auto col-4 col-lg-5">2.5s</p>
-                            <input className='col-6' type="number" name="2.5s" id="2.5s" step="2" defaultValue="2" min="0" />
+                            <input className='col-6 form-control plateCounter' type="number" name="2.5s" id="2.5s" step="2" defaultValue="2" min="0" />
                         </div>
 
                     </div>
