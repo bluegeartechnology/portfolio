@@ -19,6 +19,7 @@ body::-webkit-scrollbar{
 .App {
   /*text-align: center;*/
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -144,6 +145,7 @@ z-index: -10000;
   position:fixed;
   top:0px;
   width: 100vw;
+  height:fit-content;
   z-index: 100000;
   box-shadow: 2px 2px 8px gray;
 }
