@@ -380,10 +380,10 @@ const BarBelle = () => {
                         <button className="btn btn-success col-3 col-lg-2 my-1" onClick={(e) => reverseCalculateWeights(e)}>Reverse Calculation</button>
                     </div>
 
-                    <div id="finalWeights" className='p-4 mx-auto col-10 text-center '></div>
-                    <div id="errors" className='p-4 mx-auto col-10 text-center '></div>
+                    <div id="finalWeights" className=' mx-auto col-10 text-center '></div>
+                    <div id="errors" className=' mx-auto col-10 text-center '></div>
 
-                    <div id='finalWeightsVisual' className="row mx-auto mw-100">
+                    <div id='finalWeightsVisual' className="pt-5 row mx-auto mw-100">
                         <div id="" className='twoPointFive weight-left btn text-light px-0 my-5 border rounded col text-center bg-light text-dark '>2.5</div>
                         <div id="" className='five weight-left btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>
                         <div id="" className='five weight-left btn text-light px-0 my-4 border rounded col text-center bg-info'>5</div>
