@@ -17,7 +17,7 @@ const Contact = () => {
 
                         <a href='mailto:joshc@bluegeartechnology.com' target='blank' className='contactLink text-primary hvr-grow text-center btn mx-2 pt-4'>
                             <i className="fa fa-envelope fa-5x mx-auto"></i>
-                            <h3 id='email' >joshc@bluegeartechnology.com</h3>
+                            <h3 id='email' >Email</h3>
                         </a>
 
                         <a href='/resume' target='blank' className='contactLink text-success hvr-grow text-center btn mx-2 pt-4'>
