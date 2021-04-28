@@ -146,7 +146,7 @@ const Skills = () => {
 
 
                     <button class="btn btn-info text-light my-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#mobiledevSkills" aria-expanded="false" aria-controls="mobiledevSkills">
-                        <h3 className='text-center my-2'>Mobile Development Skills<i className="fa fa-arrow-down"></i></h3>
+                        <h3 className='text-center my-2'>Mobile Development Skills <i className="fa fa-arrow-down"></i></h3>
                     </button>
 
                     <div id='mobiledevSkills' className="collapse bg-light rounded border  row justify-content-center ">
