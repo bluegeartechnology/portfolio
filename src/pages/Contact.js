@@ -12,7 +12,7 @@ const Contact = () => {
                     <h3 className='text-center py-5'>Let's work together.</h3>
 
 
-                    <div className="d-flex row justify-content-center my-5">
+                    <div className="d-flex row justify-content-around my-5">
 
 
                         <a href='mailto:joshc@bluegeartechnology.com' target='blank' className='contactLink text-primary hvr-grow text-center btn mx-2 pt-4'>
