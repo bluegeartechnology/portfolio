@@ -72,6 +72,7 @@ const Tomatokei = (props) => {
     </>
 
     let tech = <>
+
         <div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'>
             <img className='skillIcon col-12' src="html5.png" alt="" />
             <h3 className='text-center'>HTML 5</h3>
@@ -148,6 +149,7 @@ const Tomatokei = (props) => {
                     what={what}
                     how={how}
                     tech={tech}
+                    techBadges={['html5', 'css3', 'javascript']}
                     learned={learned}
                     buttons={['youtube', 'embed', 'heroku']}
                     heroku={`tomatokei`}

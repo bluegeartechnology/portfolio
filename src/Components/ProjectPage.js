@@ -6,10 +6,34 @@ function useHistory() {
     useEffect(() => {
         window.scrollTo(0, 0)
         //document.getElementById('imageAndEmbed').innerHTML = `<img width='100%' src="\/tomatokei.png" alt="" className='rounded my-auto' />`
+
+
+        let techBadges = {
+            'html5': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="html5.png" alt="" /> <h3 className='text-center'>HTML 5</h3> </div>`,
+            'css3': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="css3.png" alt="" /> <h3 className='text-center text-dark'>CSS 3</h3></div>`,
+            'javascript': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="javascript.png" alt="" /> <h3 className='text-center'>JavaScript</h3> </div>`
+        }
+
+        //document.getElementById('techBadges').innerHTML = techBadges.html5 + techBadges.css3
+
+
     }, []);
 }
 
 const ProjectPage = (props) => {
+
+
+
+
+    let techBadges = {
+        'html5': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="html5.png" alt="" /> <h3 className='text-center'>HTML 5</h3> </div>`,
+        'css3': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="css3.png" alt="" /> <h3 className='text-center text-dark'>CSS 3</h3></div>`,
+        'javascript': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="javascript.png" alt="" /> <h3 className='text-center'>JavaScript</h3> </div>`
+    }
+
+
+    { console.log(props.techBadges.map((tech) => techBadges[tech])) }
+
 
     let buttonArray = props.buttons ? props.buttons : []
     console.log(buttonArray);
@@ -58,6 +82,8 @@ const ProjectPage = (props) => {
 
 
 
+
+                <div id='techBadges'></div>
 
                 <div id='imageAndEmbed' className="my-3 rounded mx-auto d-flex justify-content-center col-11 col-lg-6">
 
