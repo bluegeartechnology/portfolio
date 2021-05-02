@@ -13,7 +13,8 @@ function useHistory() {
             'css3': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="css3.png" alt="" /> <h3 className='text-center text-dark'>CSS 3</h3></div>`,
             'javascript': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="javascript.png" alt="" /> <h3 className='text-center'>JavaScript</h3> </div>`,
             'react': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="react.png" alt="" /> <h3 className='text-center'>ReactJS</h3> </div>`,
-            'redux': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'> <img className='skillIcon col-12' src="redux.png" alt="" /> <h3 className='text-center'>Redux</h3> </div>`
+            'redux': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'> <img className='skillIcon col-12' src="redux.png" alt="" /> <h3 className='text-center'>Redux</h3> </div>`,
+            'mongodb': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'> <img className='skillIcon col-12' src="mongodb.png" alt="" /> <h3 className='text-center'>mongoDB</h3> </div>`
 
         }
 
