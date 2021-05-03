@@ -12,12 +12,14 @@ const Portfolio = () => {
             setTimeout(() => {
                 card.classList.add('animate__animated', 'animate__fadeInRight')
                 card.style.visibility = "visible";
+                card.style.pointerEvents = 'none'
             }
                 , 250 + (250 * i))
 
             setTimeout(() => {
                 card.classList.remove('animate__animated', 'animate__fadeInRight')
                 card.classList.add('hvr-bob')
+                card.style.pointerEvents = 'all'
             }
                 , 1200 + (250 * i))
 
