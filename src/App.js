@@ -74,7 +74,7 @@ function App() {
 
 
         <div id="footer" className='bg-light p-2 border border-light border-top-1'>
-          <h6 className='text-dark m-0 text-center'>{`© ${new Date().getFullYear()} `}<span style={{ 'color': 'blue' }}>Blue</span>GearTechnology</h6>
+          <h6 className='text-dark m-0 text-center'>{`© ${new Date().getFullYear()} `}<span style={{ 'color': '#2080fb' }}>Blue</span>GearTechnology</h6>
         </div>
 
 
