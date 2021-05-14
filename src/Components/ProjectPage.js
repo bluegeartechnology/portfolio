@@ -23,7 +23,8 @@ function useHistory() {
             'premiere': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="premiere.png" alt="" /> <h4 className='text-center text-dark'>Premiere</h4> </div>`,
             'aftereffects': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="aftereffects.png" alt="" /> <h4 className='text-center text-dark'>After Effects</h4> </div>`,
 
-            'audition': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="audition.png" alt="" /> <h4 className='text-center text-dark'>Audition</h4> </div>`
+            'audition': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="audition.png" alt="" /> <h4 className='text-center text-dark'>Audition</h4> </div>`,
+            'aftereffects': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="aftereffects.png" alt="" /> <h4 className='text-center text-dark'>After Effects</h4> </div>`
         }
 
         //document.getElementById('techBadges').innerHTML = techBadges.html5 + techBadges.css3
