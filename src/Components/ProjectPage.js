@@ -31,7 +31,8 @@ function useHistory() {
             'android': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="android.png" alt="" /> <h4 className='text-center text-dark'><i className="fa"></i>Android</h4> </div>`,
             'kotlin': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="kotlin.png" alt="" /> <h4 className='text-center text-dark'><i className="fa"></i>Kotlin</h4> </div>`,
 
-            'googlesearch': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'><img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" /> <h4 className='text-center text-dark'>Google Ads<br />Search</h4> </div>`
+            'googlesearch': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'><img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" /> <h4 className='text-center text-dark'>Google Ads<br />Search</h4> </div>`,
+            'dsmods': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" /> <h4 className='text-center text-dark'>Paraben <br /> DSMO-DS</h4> </div>`
         }
 
         //document.getElementById('techBadges').innerHTML = techBadges.html5 + techBadges.css3
