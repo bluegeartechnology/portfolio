@@ -8,32 +8,7 @@ function useHistory() {
         //document.getElementById('imageAndEmbed').innerHTML = `<img width='100%' src="\/tomatokei.png" alt="" className='rounded my-auto' />`
 
 
-        let techBadges = {
-            'html5': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="html5.png" alt="" /> <h3 className='text-center'>HTML 5</h3> </div>`,
-            'css3': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="css3.png" alt="" /> <h3 className='text-center text-dark'>CSS 3</h3></div>`,
-            'javascript': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="javascript.png" alt="" /> <h3 className='text-center'>JavaScript</h3> </div>`,
-            'react': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="react.png" alt="" /> <h3 className='text-center'>ReactJS</h3> </div>`,
-            'redux': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'> <img className='skillIcon col-12' src="redux.png" alt="" /> <h3 className='text-center'>Redux</h3> </div>`,
-            'mongodb': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'> <img className='skillIcon col-12' src="mongodb.png" alt="" /> <h3 className='text-center'>mongoDB</h3> </div>`,
-            'nodejs': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="node.svg" alt="" /> <h3 className='text-center'>Node.js</h3> </div>`,
-            'bootstrap': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <svg width="" height="100" viewBox="0 0 16 16" class="col-12 bi bi-bootstrap-fill" fill="#7952b3" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" /> </svg> <h3 className='text-center'>Bootstrap</h3> </div>`,
-            'wordpress': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="wordpress.png" alt="" /> <h3 className='text-center text-dark'>WordPress</h3> </div>`,
 
-            'photoshop': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="photoshop.png" alt="" /> <h4 className='text-center text-dark'>Photoshop</h4> </div>`,
-            'premiere': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="premiere.png" alt="" /> <h4 className='text-center text-dark'>Premiere</h4> </div>`,
-            'aftereffects': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="aftereffects.png" alt="" /> <h4 className='text-center text-dark'>After Effects</h4> </div>`,
-
-            'audition': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="audition.png" alt="" /> <h4 className='text-center text-dark'>Audition</h4> </div>`,
-            'aftereffects': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="aftereffects.png" alt="" /> <h4 className='text-center text-dark'>After Effects</h4> </div>`,
-            'flstudio': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="flstudio.png" alt="" /> <h4 className='text-center text-dark'>FL Studio</h4> </div>`,
-            'blender': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob py-4'> <img className='skillIcon col-12' src="blender.svg" alt="" /> <h4 className='text-center text-dark'>Blender</h4> </div>`,
-
-            'android': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="android.png" alt="" /> <h4 className='text-center text-dark'><i className="fa"></i>Android</h4> </div>`,
-            'kotlin': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="kotlin.png" alt="" /> <h4 className='text-center text-dark'><i className="fa"></i>Kotlin</h4> </div>`,
-
-            'googlesearch': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'><img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" /> <h4 className='text-center text-dark'>Google Ads<br />Search</h4> </div>`,
-            'dsmods': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" /> <h4 className='text-center text-dark'>Paraben <br /> DSMO-DS</h4> </div>`
-        }
 
         //document.getElementById('techBadges').innerHTML = techBadges.html5 + techBadges.css3
 
@@ -51,8 +26,26 @@ const ProjectPage = (props) => {
         'css3': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="css3.png" alt="" /> <h3 className='text-center text-dark'>CSS 3</h3></div>`,
         'javascript': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="javascript.png" alt="" /> <h3 className='text-center'>JavaScript</h3> </div>`,
         'react': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="react.png" alt="" /> <h3 className='text-center'>ReactJS</h3> </div>`,
-        'redux': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'> <img className='skillIcon col-12' src="redux.png" alt="" /> <h3 className='text-center'>Redux</h3> </div>`
+        'redux': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'> <img className='skillIcon col-12' src="redux.png" alt="" /> <h3 className='text-center'>Redux</h3> </div>`,
+        'mongodb': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'> <img className='skillIcon col-12' src="mongodb.png" alt="" /> <h3 className='text-center'>mongoDB</h3> </div>`,
+        'nodejs': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="node.svg" alt="" /> <h3 className='text-center'>Node.js</h3> </div>`,
+        'bootstrap': `<div className='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <svg width="" height="100" viewBox="0 0 16 16" class="col-12 bi bi-bootstrap-fill" fill="#7952b3" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" /> </svg> <h3 className='text-center'>Bootstrap</h3> </div>`,
+        'wordpress': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="wordpress.png" alt="" /> <h3 className='text-center text-dark'>WordPress</h3> </div>`,
 
+        'photoshop': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="photoshop.png" alt="" /> <h4 className='text-center text-dark'>Photoshop</h4> </div>`,
+        'premiere': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="premiere.png" alt="" /> <h4 className='text-center text-dark'>Premiere</h4> </div>`,
+        'aftereffects': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="aftereffects.png" alt="" /> <h4 className='text-center text-dark'>After Effects</h4> </div>`,
+
+        'audition': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="audition.png" alt="" /> <h4 className='text-center text-dark'>Audition</h4> </div>`,
+        'aftereffects': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="aftereffects.png" alt="" /> <h4 className='text-center text-dark'>After Effects</h4> </div>`,
+        'flstudio': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="flstudio.png" alt="" /> <h4 className='text-center text-dark'>FL Studio</h4> </div>`,
+        'blender': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob py-4'> <img className='skillIcon col-12' src="blender.svg" alt="" /> <h4 className='text-center text-dark'>Blender</h4> </div>`,
+
+        'android': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="android.png" alt="" /> <h4 className='text-center text-dark'><i className="fa"></i>Android</h4> </div>`,
+        'kotlin': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="kotlin.png" alt="" /> <h4 className='text-center text-dark'><i className="fa"></i>Kotlin</h4> </div>`,
+
+        'googlesearch': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'><img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" /> <h4 className='text-center text-dark'>Google Ads<br />Search</h4> </div>`,
+        'dsmods': `<div className='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img className='skillIcon col-12' src="GoogleAdsSearch.png" alt="" /> <h4 className='text-center text-dark'>Paraben <br /> DSMO-DS</h4> </div>`
     }
 
 
@@ -130,8 +123,9 @@ const ProjectPage = (props) => {
                     {props.how}
 
                     <h2>Technologies Used</h2>
-                    <div className="text-light my-5 mx-auto">
-                        {props.tech}
+                    <div dangerouslySetInnerHTML={{ __html: Object.values(techBadges).join('') }} className="text-light my-5 mx-auto row justify-content-around my-4 p-4">
+                        {/*props.tech*/}
+
                     </div>
 
 
