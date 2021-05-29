@@ -49,7 +49,7 @@ const ProjectPage = (props) => {
     }
 
 
-    { console.log(props.techBadges.map((tech) => techBadges[tech])) }
+    { /*console.log(props.techBadges.map((tech) => techBadges[tech])) */ }
 
 
     let buttonArray = props.buttons ? props.buttons : []
