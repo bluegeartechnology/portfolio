@@ -22,15 +22,15 @@ const ProjectPage = (props) => {
 
 
     let techBadges = {
-        'html5': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="html5.png" alt="" /> <h3 class='text-center'>HTML 5</h3> </div>`,
-        'css3': `<div class='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="css3.png" alt="" /> <h3 class='text-center '>CSS 3</h3></div>`,
-        'javascript': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="javascript.png" alt="" /> <h3 class='text-center'>JavaScript</h3> </div>`,
-        'react': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="react.png" alt="" /> <h3 class='text-center'>ReactJS</h3> </div>`,
-        'redux': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'> <img class='skillIcon col-12' src="redux.png" alt="" /> <h3 class='text-center'>Redux</h3> </div>`,
-        'mongodb': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'> <img class='skillIcon col-12' src="mongodb.png" alt="" /> <h3 class='text-center'>mongoDB</h3> </div>`,
-        'nodejs': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="node.svg" alt="" /> <h3 class='text-center'>Node.js</h3> </div>`,
-        'bootstrap': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <svg width="" height="100" viewBox="0 0 16 16" class="col-12 bi bi-bootstrap-fill" fill="#7952b3" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" /> </svg> <h3 class='text-center'>Bootstrap</h3> </div>`,
-        'wordpress': `<div class='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="wordpress.png" alt="" /> <h3 class='text-center '>WordPress</h3> </div>`,
+        'html5': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="html5.png" alt="" /> <h4 class='text-center'>HTML 5</h4> </div>`,
+        'css3': `<div class='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="css3.png" alt="" /> <h4 class='text-center '>CSS 3</h4></div>`,
+        'javascript': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="javascript.png" alt="" /> <h4 class='text-center'>JavaScript</h4> </div>`,
+        'react': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="react.png" alt="" /> <h4 class='text-center'>ReactJS</h4> </div>`,
+        'redux': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'> <img class='skillIcon col-12' src="redux.png" alt="" /> <h4 class='text-center'>Redux</h4> </div>`,
+        'mongodb': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob row-column justify-content-between my-auto'> <img class='skillIcon col-12' src="mongodb.png" alt="" /> <h4 class='text-center'>mongoDB</h4> </div>`,
+        'nodejs': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="node.svg" alt="" /> <h4 class='text-center'>Node.js</h4> </div>`,
+        'bootstrap': `<div class='col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <svg width="" height="100" viewBox="0 0 16 16" class="col-12 bi bi-bootstrap-fill" fill="#7952b3" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" /> </svg> <h4 class='text-center'>Bootstrap</h4> </div>`,
+        'wordpress': `<div class='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="wordpress.png" alt="" /> <h4 class='text-center '>WordPress</h4> </div>`,
 
         'photoshop': `<div class='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="photoshop.png" alt="" /> <h4 class='text-center '>Photoshop</h4> </div>`,
         'premiere': `<div class='my-2 col-lg-2 col-md-3 col-sm-5 col-6 hvr-bob'> <img class='skillIcon col-12' src="premiere.png" alt="" /> <h4 class='text-center '>Premiere</h4> </div>`,
