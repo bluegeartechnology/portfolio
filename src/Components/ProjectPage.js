@@ -123,6 +123,27 @@ const ProjectPage = (props) => {
                     {props.how}
 
                     <h2>Technologies Used</h2>
+
+
+
+                    {/* {props.techBadges.map(tech => {
+                        document.getElementById('techBadgeCorral').innerHTML = 'hi'
+                    })} */}
+
+                    {/* {props.techBadges.map(tech => {
+                        //console.log(techBadges[tech]);
+
+                        // if (techBadges[tech] != null) {
+                        //     document.getElementById('techBadgeCorral').innerHTML = 'hi' //document.getElementById('techBadgeCorral') + techBadges[tech]
+                        // }
+                        //return techBadges[tech]
+                        return 'hi'
+                    }) */}
+
+                    <div id='techBadgeCorral' dangerouslySetInnerHTML={{ __html: props.techBadges.map(tech => techBadges[tech]).join('') }} className="text-light my-5 mx-auto row justify-content-around my-4 p-4">
+
+                    </div>
+
                     <div dangerouslySetInnerHTML={{ __html: Object.values(techBadges).join('') }} className="text-light my-5 mx-auto row justify-content-around my-4 p-4">
                         {/*props.tech*/}
 
@@ -135,7 +156,7 @@ const ProjectPage = (props) => {
 
 
             </div>
-        </div>
+        </div >
     )
 }
 
