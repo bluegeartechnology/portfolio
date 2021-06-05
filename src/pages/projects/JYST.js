@@ -29,7 +29,7 @@ const JYST = () => {
     let how = <>
         <p>
             JYST uses web scraping and browser automation to pull data from local junkyards.
-            On the client-side, simple search page enables easy, on-demand searching of all available inventories, while a server-side cron job maintains a daily scrape of all desired cars, and emails them to subscribers.
+            On the client-side, simple search page with a nice coat of Bootstrap paint enables easy, on-demand searching of all available inventories, while a server-side cron job maintains a daily scrape of all desired cars, and emails them to subscribers.
     </p>
         <p>
             The front end is powered by React, which makes requests to the back end via Axios.
