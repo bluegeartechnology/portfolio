@@ -144,10 +144,10 @@ const ProjectPage = (props) => {
 
                     </div>
 
-                    <div dangerouslySetInnerHTML={{ __html: Object.values(techBadges).join('') }} className="text-light my-5 mx-auto row justify-content-around my-4 p-4">
-                        {/*props.tech*/}
+                    {/* <div dangerouslySetInnerHTML={{ __html: Object.values(techBadges).join('') }} className="text-light my-5 mx-auto row justify-content-around my-4 p-4">
+                        {//props.tech}
 
-                    </div>
+                </div> */}
 
 
                     <h2>What I learned</h2>
