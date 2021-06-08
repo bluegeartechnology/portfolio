@@ -68,6 +68,8 @@ const Tomatokei = (props) => {
 
         <p>
             Once the user is happy with a project or task, they can organize themselves even further by sending it directly to Google Calendar.
+            This integration allows a much better ease of use than most tools, especially if the user already used Google Calendar,
+            as most tools rely upon their own internal alarm system, which becomes another thing to keep track of.
                     </p>
     </>
 
