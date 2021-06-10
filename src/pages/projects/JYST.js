@@ -15,7 +15,8 @@ const JYST = () => {
     let what = <>
         <p>
             JYST is a web-scraper specifically for scraping local junkyard websites.
-            It primarily exists to enable part-flipping businesses to more easily find parts which can then be sold online.
+            It exists to act as a meeting point between junkyards and part-flipping businesses.
+            It enables part-flipping businesses to more easily find parts which can then be sold online.
             It also contains tools for estimating profit margins of a trip to a given yard based on the cars found by the scrape.
                     </p>
 
