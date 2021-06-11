@@ -135,6 +135,7 @@ const Tomatokei = (props) => {
                         </li>
             <li>
                 Because this was the first time I'd attempted understanding and implementing an authentication system, it's built from scratch based on tutorials.
+                It uses JSON web tokens to this end.
                 There was little practical reason to do this other than learning, and I would definitely avoid reinventing the wheel in the future, and use something like Passport instead.
                         </li>
 
