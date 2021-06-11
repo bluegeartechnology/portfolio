@@ -50,8 +50,8 @@ const Tomatokei = (props) => {
             Of course, all of these difficulties can affect people without ADHD to some degree, but they exist to an extreme degree in those with it.
                     </p>
         <p>
-            Tomatokei seeks to alleviate these issues by offering the end user a visually minimalist task and project management system that guides the user through a path of their own creation.
-            This is done by empowering the user with a series of tools.
+            Tomatokei seeks to alleviate these issues by offering the user a visually minimalist task and project management system that guides the user through a path of their own creation.
+            This is done by empowering the user with a series of tools designed for objectives of different complexity.
                     </p>
 
 
