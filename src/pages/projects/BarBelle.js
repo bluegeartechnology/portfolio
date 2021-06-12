@@ -460,7 +460,7 @@ const BarBelle = () => {
                     <p>Of course, it also checks for edge cases which arise from this methodology. If there's no combination of plates in the given set which will achieve the desired weight, it will say as much.</p>
 
                     <h5>Existing Weight Calculation</h5>
-                    <p>In the case that the bar already an unknown amount of weight on it, the user inputs which weights are on the bar by tapping the appropriate weight icons. This is generally much faster than using a calculator every time.</p>
+                    <p>In the case that the bar already has an unknown amount of weight on it, the user inputs which weights are on the bar by tapping the appropriate weight icons. This is generally much faster than using a calculator every time.</p>
 
 
 
@@ -517,6 +517,7 @@ const BarBelle = () => {
                     <h2>What I learned</h2>
                     <p>
                         Although I'd previously played with mobile development technologies such as React Native in the past, this was my first real forray into Android development proper.
+                        
                     </p>
 
                 </div>
