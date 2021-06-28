@@ -16,11 +16,36 @@ const Skills = () => {
             <div id="skillsContainer" className='container col-12 col-xs-12 col-md-10 col-lg-10 col-xl-8 py-5 mb-4'>
 
                 <div className='my-4 bg-white px-4 py-4 rounded border shadow'>
-                    <h2>Skills & Certifications</h2>
+
+                    <div className="row d-flex justify-content-between">
+
+                        <h2 className={'col-9 mx-2'}>Skills & Certifications</h2>
+
+                        <button className={'btn btn-secondary rounded float-end col-2'} id='openCloseAll' onClick={() => {
+                            Array.from(document.getElementsByTagName('button')).map((el, i) => {
+                                if (document.getElementById('openCloseAll').innerHTML == 'Open All' && el.classList.contains('collapsed')) {
+                                    el.click();
+                                    document.getElementById('openCloseAll').innerHTML = 'Close All'
+                                }
+
+                                if (document.getElementById('openCloseAll').innerHTML == 'Close All' && el.classList.contains('collapse')) {
+                                    el.click();
+                                    document.getElementById('openCloseAll').innerHTML = 'Open All'
+                                }
+                            })
+                        }
+                        }>Open All</button>
+
+
+                    </div>
 
 
 
-                    <button id='webdevSkillsButton' class="btn btn-primary my-4 w-100 " type="button" data-bs-toggle="collapse" data-bs-target="#webdevSkills" aria-expanded="false" aria-controls="webdevSkills">
+
+
+
+
+                    <button id='webdevSkillsButton' class="btn btn-primary my-4 w-100 collpase" type="button" data-bs-toggle="collapse" data-bs-target="#webdevSkills" aria-expanded="false" aria-controls="webdevSkills">
                         <h3 className='text-center my-2'>Web Development Skills <i className="fa fa-arrow-down"></i></h3>
                     </button>
 
@@ -98,7 +123,7 @@ const Skills = () => {
 
                     </div>
 
-                    <button class="btn btn-success my-4 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#digitalMediaSkills" aria-expanded="false" aria-controls="digitalMediaSkills">
+                    <button class="btn btn-success my-4 w-100 collpase" type="button" data-bs-toggle="collapse" data-bs-target="#digitalMediaSkills" aria-expanded="false" aria-controls="digitalMediaSkills">
                         <h3 className='text-center my-2'>Digital Media Skills <i className="fa fa-arrow-down"></i></h3>
                     </button>
 
