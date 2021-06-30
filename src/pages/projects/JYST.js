@@ -89,6 +89,7 @@ const JYST = () => {
             Who would pay for such a system?
             What tools and features would they actually use?
             The importance of carefully considering the business side of things, rather just focusing on the coding side and excitedly diving head-first into feature creep, is a lesson I won't soon forget.
+            It emboldened me to pursue SaaS business options, and refined my understanding of the process.
     </p>
     </>
 
